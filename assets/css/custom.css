@@ -1,0 +1,12 @@
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+.hangingindent {
+  padding-left: 50px ;
+  text-indent: -50px ;
+}
