@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Strap Map</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
@@ -17,8 +23,8 @@
 
 <body>
 <!--navbar-->
-<nav class="navbar navbar-inverse">
-  <div class="container">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
     <div class="navbar-header">
     </div>
     <ul class="nav navbar-nav">
@@ -30,14 +36,8 @@
   </div>
 </nav>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-
 <!-- Map On -->
 <head>
-	<title>DDT Map</title>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
 		integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
     crossorigin=""/>
@@ -47,15 +47,40 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css">
 	<script src="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>
 	<style>
-  	#map {
-  		width: 960px;
-    	height: 500px;
+    #map {
+      height: 100%;
+      width: 100%;
     }
+
+    #map img {
+      max-width: none;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .fill {
+      top: 50px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      width: auto;
+      height: auto;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+
 	</style>
 </head>
 
 <body>
-	<div id="map"></div>
+  <div class="container fill">
+  <div id="map">
 	<script>
 
 		var map = L.map('map',{scrollWheelZoom:false}).setView([28.4187304,-81.581206], 17);
@@ -126,39 +151,37 @@
 									{ coords: [28.410341, -81.587041], uri: 'https://tinyurl.com/jjyfjnb' },
 					];
 
-					var x = markers.length;
+			var x = markers.length;
 
-					while(x--) {
-								L.marker(markers[x].coords, {icon: ripIcon}).on('click', function(e) {
-								window.location = markers[e.target._leaflet_id].uri;
-								}).addTo(map)._leaflet_id = x;
-					}
+			while(x--) {
+				  L.marker(markers[x].coords, {icon: ripIcon}).on('click', function(e) {
+				  window.location = markers[e.target._leaflet_id].uri;
+					}).addTo(map)._leaflet_id = x;
+			}
 
-					L.easyButton('fa-magic', function(btn, map){
-			    			var magicKingdom = [28.4187304, -81.581206];
-			    			map.setView(magicKingdom);
-					}).addTo(map);
+			L.easyButton('fa-magic', function(btn, map){
+			    var magicKingdom = [28.4187304, -81.581206];
+			    map.setView(magicKingdom);
+			}).addTo(map);
 
-					L.easyButton('fa-circle', function(btn, map){
-			    			var epcot = [28.37324, -81.54939];
-			    			map.setView(epcot);
-					}).addTo(map);
+			L.easyButton('fa-circle', function(btn, map){
+			    var epcot = [28.37324, -81.54939];
+			    map.setView(epcot);
+			}).addTo(map);
 
-					L.easyButton('fa-video-camera', function(btn, map){
-			    			var hollywoodStudios = [28.35757, -81.55982];
-			    			map.setView(hollywoodStudios);
-					}).addTo(map);
+			L.easyButton('fa-video-camera', function(btn, map){
+			    var hollywoodStudios = [28.35757, -81.55982];
+			    map.setView(hollywoodStudios);
+			}).addTo(map);
 
-					L.easyButton('fa-tree', function(btn, map){
-			    			var animalKingdom = [28.36053, -81.59161];
-			    			map.setView(animalKingdom);
-					}).addTo(map);
+			L.easyButton('fa-tree', function(btn, map){
+			    var animalKingdom = [28.36053, -81.59161];
+			    map.setView(animalKingdom);
+			}).addTo(map);
 
 	</script>
 </body>
 <!-- Map Off -->
-
-    </div>
   </div>
 </div>
 </body>

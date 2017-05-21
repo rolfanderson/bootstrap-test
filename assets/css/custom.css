@@ -10,3 +10,14 @@ p {
   padding-left: 50px ;
   text-indent: -50px ;
 }
+
+/* Map */
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
