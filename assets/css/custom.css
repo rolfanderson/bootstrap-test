@@ -12,12 +12,25 @@ p {
 }
 
 /* Map */
-body {
-    padding: 0;
-    margin: 0;
+html, body, #container /*, and all other map parent selectors*/ {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
 }
-html, body, #map {
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
+
+body {
+  padding-top: 50px;
+}
+
+#map {
+  width: auto;
+  height: 100%;
+}
+
+.material-icons, .icon-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
