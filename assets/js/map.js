@@ -85,7 +85,7 @@
               map.setView(epcot);
         }).addTo(map);
 
-        L.easyButton('fa-video-camera', function(btn, map){
+        L.easyButton('<i class="material-icons">movie_filter</i>', function(btn, map){
               var hollywoodStudios = [28.35757, -81.55982];
               map.setView(hollywoodStudios);
         }).addTo(map);
