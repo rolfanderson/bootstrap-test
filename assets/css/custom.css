@@ -1,37 +1,20 @@
-h1, h2, h3 {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+
+h1, h2, h3, header {
   font-family: 'Roboto Slab', serif;
 }
 
-p {
+p, blockquote {
   font-family: 'EB Garamond', serif;
+  font-size: 18px;
 }
 
-.hangingindent {
+.hanging {
   padding-left: 50px ;
   text-indent: -50px ;
 }
 
-/* Map */
-html, body, #container /*, and all other map parent selectors*/ {
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-}
-
 body {
   padding-top: 50px;
-}
-
-#map {
-  width: auto;
-  height: 100%;
-}
-
-/* Material Design icons */
-.material-icons, .icon-text, .mdi {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
