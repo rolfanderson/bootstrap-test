@@ -90,7 +90,7 @@
               map.setView(hollywoodStudios);
         }).addTo(map);
 
-        L.easyButton('<i class="mdi mdi-paw mdi-18px"></i>', function(btn, map){
+        L.easyButton('<i class="material-icons">bug_report</i>', function(btn, map){
               var animalKingdom = [28.36053, -81.59161];
               map.setView(animalKingdom);
         }).addTo(map);
