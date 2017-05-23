@@ -27,7 +27,8 @@ body {
   height: 100%;
 }
 
-.material-icons, .icon-text, #fa-magic {
+/* Material Design icons */
+.material-icons, .icon-text, .mdi {
   margin: 0;
   position: absolute;
   top: 50%;

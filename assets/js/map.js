@@ -75,7 +75,7 @@
               }).addTo(map)._leaflet_id = x;
         }
 
-        L.easyButton('fa-magic', function(btn, map){
+        L.easyButton('<i class="mdi mdi-auto-fix mdi-18px"></i>', function(btn, map){
               var magicKingdom = [28.4187304, -81.581206];
               map.setView(magicKingdom);
         }).addTo(map);
@@ -90,7 +90,7 @@
               map.setView(hollywoodStudios);
         }).addTo(map);
 
-        L.easyButton('fa-bug', function(btn, map){
+        L.easyButton('<i class="mdi mdi-paw mdi-18px"></i>', function(btn, map){
               var animalKingdom = [28.36053, -81.59161];
               map.setView(animalKingdom);
         }).addTo(map);
