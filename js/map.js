@@ -75,6 +75,11 @@
               }).addTo(map)._leaflet_id = x;
         }
 
+        L.easyButton( '<i class="mdi mdi-help mdi-18px"></i>', function(){
+              alert('Search the map to reveal abject sacrifices.');
+        }).addTo(map);
+
+      /*
         L.easyButton('<i class="mdi mdi-auto-fix mdi-18px"></i>', function(btn, map){
               var magicKingdom = [28.4187304, -81.581206];
               map.setView(magicKingdom);
@@ -94,3 +99,4 @@
               var animalKingdom = [28.36053, -81.59161];
               map.setView(animalKingdom);
         }).addTo(map);
+      */

@@ -18,3 +18,15 @@ p, blockquote {
 body {
   padding-top: 50px;
 }
+
+/*.logo {
+  height:auto;
+  width:27px;
+}
+
+.logo:hover {
+  opacity:0.5;
+  background:url("img/logoinverse.png");
+  height:auto;
+  width:27px;
+}*/
