@@ -453,6 +453,7 @@ var zoomControl = L.control.zoom({
 }).addTo(map);
 
 /* GPS enabled geolocation control set to follow the user's location */
+/*
 var locateControl = L.control.locate({
   position: "bottomright",
   drawCircle: true,
@@ -483,6 +484,7 @@ var locateControl = L.control.locate({
     timeout: 10000
   }
 }).addTo(map);
+*/
 
 /*Larger screens get expanded layer control and visible sidebar*/
 if (document.body.clientWidth <= 767) {

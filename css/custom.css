@@ -212,7 +212,7 @@ input[type="radio"], input[type="checkbox"] {
   }
 }
 
-/*Navbar*/
+/*Navbar Always Collapsed*/
 @media (min-width: 768px)
 {
     .navbar-header
@@ -229,4 +229,9 @@ input[type="radio"], input[type="checkbox"] {
     {
         display: none !important;
     }
+}
+
+
+#sidebar-toggle-btn {
+  background-color: #222222;
 }
