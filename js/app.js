@@ -358,7 +358,6 @@ var markers = [
               //splashMountain, 6 November 2000
               { coords: [28.417928, -81.583496], uri: 'https://tinyurl.com/n8nna9v' },
               //jungleCruise, 23 March 2012, died 7 April 2012
-              
               //Epcot
               { coords: [28.373862, -81.552383], uri: 'https://tinyurl.com/mycq7sv' },
               //soarin', 15 January 2007
@@ -385,14 +384,13 @@ var markers = [
               { coords: [28.410341, -81.587041], uri: 'https://tinyurl.com/jjyfjnb' },
       ];
 
-      var x = markers.length;
+var x = markers.length;
 
-      while(x--) {
-            L.marker(markers[x].coords, {icon: ripIcon}).on('click', function(e) {
-            window.location = markers[e.target._leaflet_id].uri;
-            }).addTo(map)._leaflet_id = x;
-      }
-
+while(x--) {
+    L.marker(markers[x].coords, {icon: ripIcon}).on('click', function(e) {
+    window.location = markers[e.target._leaflet_id].uri;
+    }).addTo(map)._leaflet_id = x;
+}
 
 
 /* Layer control listeners that allow for a single markerClusters layer */
@@ -696,5 +694,3 @@ if (!L.Browser.touch) {
 } else {
   L.DomEvent.disableClickPropagation(container);
 }
-
-// Disney map js
