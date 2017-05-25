@@ -7,7 +7,7 @@
   }).addTo(map);
 
   var ripIcon = L.icon({
-                iconUrl: 'http://i.imgur.com/IHzxi4h.png',
+                iconUrl: 'http://i.imgur.com/TaHF1B8.png',
                 iconSize: [25, 25],
   });
 
