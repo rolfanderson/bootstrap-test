@@ -21,13 +21,14 @@ body {
 }
 
 #logo {
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: bolder;
   color: white;
 }
 
 /*Map*/
-html, body, #container /*, and all other map parent selectors*/ {
+
+html, body, #container  {
   height: 100%;
   overflow: hidden;
   width: 100%;
@@ -49,3 +50,5 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*Just Imported*/
