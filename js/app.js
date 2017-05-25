@@ -326,13 +326,37 @@ map = L.map("map", {
 });
 
 var ripIcon = L.icon({
-              iconUrl: 'http://i.imgur.com/TaHF1B8.png',
+              iconUrl: 'img/marker.png',
               iconSize: [25, 25],
 });
 
-var marker
+var marker =
 
-var markers = [
+    L.marker([28.418395, -81.578169], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.419296, -81.580979], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.419192, -81.577707], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.418824, -81.577455], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.418786, -81.577202], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.417909, -81.584142], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.417958, -81.584346], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.418962, -81.577671], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.420159, -81.581194], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.420490, -81.582037], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.419169, -81.585052], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+    L.marker([28.417928, -81.583496], {icon: ripIcon}).addTo(map).bindPopup("RIP");
+
+/*var markers = [
               //Magic Kingdom
               { coords: [28.418395, -81.578169], uri: 'https://tinyurl.com/k9dvj5u' },
               //skyway, 15 February 1999
@@ -384,6 +408,7 @@ var markers = [
               { coords: [28.410341, -81.587041], uri: 'https://tinyurl.com/jjyfjnb' },
       ];
 
+
 var x = markers.length;
 
 while(x--) {
@@ -391,7 +416,7 @@ while(x--) {
     window.location = markers[e.target._leaflet_id].uri;
     }).addTo(map)._leaflet_id = x;
 }
-
+*/
 
 /* Layer control listeners that allow for a single markerClusters layer */
 /*
