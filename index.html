@@ -7,165 +7,285 @@
 
     <title>Disney Death Tour</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+      integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+    integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css">
+  	<script src="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>
+    <!-- Fonts, etc. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head>
   <body>
-<!-- Banner Here -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html" id="logo">Disney Death Tour</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="strapmap.html" id="logo">Disney Death Tour</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav navbar-left">
+            <li><a data-toggle="modal" data-target="#introduction">Introduction</a></li>
+            <li><a data-toggle="modal" data-target="#monumentality">Monumentality</a></li>
+            <li><a data-toggle="modal" data-target="#thanotourism">Thanotourism</a></li>
+            <li><a data-toggle="modal" data-target="#deathrhet">Death Rhetoric</a></li>
+            <li><a data-toggle="modal" data-target="#augmentedreality">Augmented Reality</a></li>
+            <li><a data-toggle="modal" data-target="#mortimer">Memento Mortimer</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="monumentality.html">Monumentality</a></li>
-          <li><a href="thanotourism.html">Thanotourism</a></li>
-          <li><a href="deathrhet.html">Death Rhetoric</a></li>
-          <li><a href="strapmap.html">Map</a></li>
-          <li><a href="ar-section.html">Augmented Reality</a></li>
-          <li><a href="mortimer.html">Memento Mortimer</a></li>
-        </ul>
-      </div>
-  </nav>
-<!-- Main Text -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-<h1>Disney Death Tour</h1>
-<h3>Introduction</h3>
-<p>Disney Death Tour provides an emplaced critique at the site of Disney
-World’s Magic Kingdom in order to memorialize those who have lost their lives
-at the park. By constructing digital, and therefore unremovable, monuments at
-the locations of the many deaths that Disney has sought to cover up, this
-project challenges the dominant narratives of the park while reflecting on the
-abject sacrifices endemic to the tourist industry.</p>
+    </nav>
 
-<p><img class="img-responsive" src="img/skyway-ar.png"></p>
+    <!-- Intro -->
+    <div class="modal fade" id="introduction" role="dialog">
+      <div class="modal-dialog modal-lg">
 
-<p><i>“[T]he process of MEmorializing begins with a sting (punctum) received from a news item, a story from
-the daily dose of information circulated by journalism.”—Gregory L. Ulmer, Electronic Monuments</i></p>
-<p><i>“A Walt Disney World custodian plunged 40 feet to his death Sunday morning after clinging to the
-outside of a rising cable car that had swept him from a platform.”—Orlando Sentinel, 14 February, 1999</i></p>
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Introduction</h1>
+          </div>
+<div class="modal-body">
+<p><img class="img-responsive" src="img/banner.jpg"></p>
+<p><i>“[T]he process of MEmorializing begins with a sting (punctum) received
+from a news item, a story from the daily dose of information circulated by
+journalism.”—Gregory L. Ulmer, Electronic Monuments</i></p>
+<p><i>“A Walt Disney World custodian plunged 40 feet to his death Sunday morning
+after clinging to the outside of a rising cable car that had swept him from a
+platform.”—Orlando Sentinel, 14 February, 1999</i></p>
 
-<p>Our Disney Death Tour starts with a single tragedy:</p>
-<blockquote>Raymond Barlow, 65, was on a platform for the Skyway in Fantasyland when the cable-car
-ride was switched on for the park's opening, sending one of the gondolas toward the part-time worker.
-The startled Clermont resident grabbed the four-person gondola and struggled to pull himself inside,
-park employees told investigators. On the way up, he apparently was looking for a place to land and
-let go over a flower bed, snapping some tree branches on the way down, the workers said.
-<br>(“Worker At Disney Plunges To His Death”)</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
 
-<p>The Skyway from which he fell was torn down six months later. Although Disney was fined $4,500
-for “a ‘serious’ violation of safety standards,” The Orlando Sentinel reported that, “The ride's
-closing is not a result of any concerns about its safety.” Bob Sehlinger, author of The Unofficial
-Guide to Walt Disney World, commented, “The five-minute Skyway ride, though pleasant, was probably
-costly to maintain, and Disney figured it could make better use of the space.”</p>
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
 
-<p>The incident demonstrates a few principles regarding narrative and space. Whatever the official
-story may be, the close proximity between Barlow’s death and shuttering the Skyway certainly seems
-suspicious. Or at least it wouldn’t come as a surprise if the actual story differed from the official
-account. More importantly, the two phenomena actually happened; Raymond Barlow died and the Skyway
-closed down.  Despite all efforts to control a corporate image, sinister or practical, no imagineer
-can stop people from dying at Disney. As for the ride, its removal further highlights erasure and
-rewriting space. Sehlinger’s comments reflect practical business interests, but Barlow’s death adds
-a macabre poignancy to the high costs of maintaining a theme park.</p>
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
 
-<p>Around 30 people have died at Disney theme parks since 1977 (an exact figure is difficult to cobble
-together). Most were the result of preexisting conditions or natural causes, what one report calls “not
-surprising.” Some were the result of freak accidents. In many cases, families pursued legal action and
-reached monetary settlements with the Disney corporation.  For reasons explored later in this text,
-however, Raymond Barlow’s death stands out. The tour necessarily starts with him. </p>
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
 
-<h3>Criticizing the Mouse</h3>
-
-<p><i>“It’s company policy… If guests have the nerve to die, they wait, like unwanted calories, until
-they’ve crossed the line and can do so safely off property. [...] Thus, no one gets sick or hurt at
-Disney; no one dies at Disney, no one leaves Disney unhappy or is fired for no reason; and no one writes
-bad things about the park once they’re gone.”—Inside the Mouse</i></p>
-
-<p>That “no one dies at Disney” paints a dystopian picture of corporate control, mediation of park space
-so authoritarian as to censor death itself. A cover-up. A conspiracy. Disney scrutinizes what enters and
-leaves its property such that truth only circulates in the off-record whispers of its employees:</p>
-
-<blockquote>We had a guy last summer who went to EPCOT, stood under the golf ball, took a gun, and blew
-his head off. But he didn’t die. He stood right there in front of all those tourists and went “cluck” and
-brains blew everywhere. But he didn’t die there. The medic told me that they are not allowed to let them
-die there. Keep them alive by artificial means until they’re off Disney property, like there’s an imaginary
-line in the road and they go, “He’s alive, he’s alive, he’s dead.”
-(Qtd. in Inside the Mouse 115)</blockquote>
-
-<p>The absurdity of it all–denial of a bullet in the brain’s finality, no further explanation of “artificial
-means,” and of course the arbitrary border between life and death–contributes to and almost certainly stems
-from Disney’s perceived omnipotence.</p>
-
-<p>DDT is premised on an urban legend, the first challenge to our credibility. Online fact-checker Snopes.com
-takes on the claim, “Disney can legitmately [sic] claim that no one has ever died at one of their theme parks, because
-they always ensure that accident victims are removed from park property before being declared dead”
-(“Declared Deaths at Disney”). Though it renders a “false” verdict, Snopes acknowledges “This legend is a
-tricky subject to tackle, because it’s based upon the fine (and often confusing) distinction between actual
-death and declared death.” To clarify our assumptions, at no point do we take for granted the Disney death
-myth as law of the land. DDT instead explores how Disney deaths circulate within a network of lore, industry,
-place, and community discourse.</p>
-
-<p>Critical approaches to Disney theme parks are nothing new. Thibaut
-Clément’s excellent review of literature traces the tension between
-intellectual work and mass entertainment exemplified by Disney. Efforts
-to identify the “locus of control” in Disney’s parks traversed the
-high-brow/low-brow debates of the last century. Early intellectual
-suspicion emerges as early as 1958. Other voices saw in Disneyland a
-restoration of the public sphere, of performance and participation.
-Recent work emphasizes the productive rather than pessimistic
-possibilities in commercial tourist spaces:</p>
-
-<blockquote>In assigning various degrees of agency to the parks’ participants,
-critics have gradually displaced the locus of control for the parks’
-meaning, design, and operations from the Disney corporation to the
-individual user and the company’s socio-economic context, paying
-increasing attention to the audience’s interpretive activity and the
-parks’ competitive environment. (8)</blockquote>
-
-<p>Thibaut concludes “Visitors are not ‘cultural dopes’ but rather actively
-reconstruct available meanings to elaborate strategies and pursue
-motives of their own” (8). Seeking the locus of control shifts from
-identifying the presence of agency to the more nuanced assessment of
-“how much credit the parks’ various participants must be given in
-shaping and assigning meaning to the parks’ environment” (9).</p>
-
-<p>In 1995, the cultural studies ensemble The Project on Disney published
-<i>Inside the Mouse: Work and Play at Disney World</i>, which conducts a
-critical examination of and in Disney theme parks. In part the book is a
-model. It weighs the self-conscious guilt experienced by critics turned
-tourists (“The Problem with Pleasure”), suggests playfully subversive
-negotiations of park space (“The Alternative Ride”), and can’t resist a
-degree of anti-authority snark (“Working at the Rat”). It also helps
-circulate the “no one dies at Disney” legend as a counter-narrative
-which escapes corporate oversight. For our purposes, the Project on
-Disney serves as a precedent, a source for the myth, and ultimately a
-point of departure.</p>
-
-<p>By including an image of settled scholarship, we hope to clarify our
-intentions for DDT—what it is, and what it is not. It is not an exposé
-revealing corporate secrets, nor a critically aloof reading of Disney
-parks. Neither do we wish to state the obvious: of course visitors
-cultivate personal meanings in even the most mediated of spaces. Whereas
-previous critical work formulates Disney parks in terms of either the
-passive reception of signs or the active construction of individual
-interpretations, of dominant ideologies or subversive subjectivities,
-DDT introduces new writings into the space itself. At the same time, we
-explore theories of writing and of writing in relation to space. DDT
-employs as much its methods–MEmorality, psychogeography, augmented
-reality, critical tourism–as an inquiry into the limits of our methods.</p>
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
 
       </div>
     </div>
-  </div>
-<!-- End Text -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+
+    <!-- Monumentality -->
+    <div class="modal fade" id="monumentality" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Monumentality</h1>
+          </div>
+<div class="modal-body">
+<p><img class="img-responsive" src="img/banner.jpg"></p>
+<p><i>"In a move that simultaneously destabilizes and redistributes the ‘neat
+boundaries’ of seemingly local, real-time interactions, Latour suggests
+that we take care to examine how our interactions are 'overflowing in
+all directions' making it virtually impossible for our analyses to start
+(or stay) anywhere that can be said to be truly local (202)”—Jody
+Shipka, Toward a Composition Made Whole</i></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
+
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
+
+<h3>Ladies and Gentlemen, Dr. Greg Ulmer:</h3>
+<p><div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item"
+  src="https://www.youtube.com/embed/_KMjRey67pI"></iframe>
+</div></p>
+
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
+
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
+
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Thanotourism -->
+    <div class="modal fade" id="thanotourism" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Thanotourism</h1>
+          </div>
+<div class="modal-body">
+<p><img class="img-responsive" src="img/banner.jpg"></p>
+<p><i>“Order is imposed through power, and though one body orders a space to a
+particular end, that order is not necessarily recognized or obeyed by
+all who enter that space.”</i>—Sidney I. Dobrin, <i>Postcomposition</i></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
+
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
+
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
+
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
+
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Death Rhetoric -->
+    <div class="modal fade" id="deathrhet" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Death Rhetoric</h1>
+          </div>
+<div class="modal-body">
+<p><img class="img-responsive" src="img/banner.jpg"></p>
+<p><i>"[T]he limits of memory and representation serve to remind composition
+scholars of the significant roles pre-reflective sensations play in our everyday
+lives and the responsibilities we hold at the same time to guard against their
+theorization or memorialization as such in writing."</i>
+<br>—Scot Barnett, "Psychogeographies of Writing"</br></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
+
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
+
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
+
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
+
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Augmented Reality -->
+    <div class="modal fade" id="augmentedreality" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Augmenting Space, Articulating Place</h1>
+          </div>
+<div class="modal-body">
+<p><img class="img-responsive" src="img/skyway-poster.jpg" width="100%"></p>
+<p><i>"The MEmorial is a form of humanities visualization of data sets,
+giving insight into large-scale complex processes and events within an
+arts and letters frame of reference"—Gregory Ulmer, Electronic Monuments</i></p>
+
+<p><i>“Hollis approached the body. That wasn’t there. But was. Alberto
+followed her with the laptop, careful of the cable. She felt as if he were
+holding his breath. She was holding hers.”-William Gibson, Spook Country</i></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
+
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
+
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
+
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
+
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Memento Mortimer -->
+    <div class="modal fade" id="mortimer" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Memento Mortimer</h1>
+          </div>
+<div class="modal-body">
+
+<p><img class="img-responsive" src="img/mementomori.png"></p>
+
+<p><i>“I kissed my first girl while wearing a glow-in-the-dark Haunted Mansion shirt”</i>—Cory Doctorow</p>
+
+<p><i>“By an extraordinary coincidence (but this derives without a doubt from
+the enchantment inherent to this universe), this frozen, childlike world
+is found to have been conceived and realized by a man who is himself now
+cryogenized: Walt Disney, who awaits his resurrection through an increase
+of 180 degrees centigrade.”</i>—Jean Baudrillard, <i>Simulacra and Simulation</i></p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et augue sed dignissim. Duis tristique sapien velit. Curabitur vel mauris rhoncus, ultricies quam et, varius erat. Suspendisse sit amet dolor quis diam molestie sagittis. Nulla ac mollis massa, et lobortis ex. Curabitur dictum mi neque, quis euismod massa eleifend eu. Curabitur iaculis ultrices sapien, hendrerit tincidunt est posuere at. Suspendisse lobortis quam ac tincidunt egestas. Integer accumsan lectus quis orci pellentesque sollicitudin. Ut neque dui, iaculis et diam et, cursus accumsan turpis. Fusce ut eros risus.</p>
+
+<p>Aenean rhoncus lacus quis ipsum interdum gravida. Nam ex tortor, ullamcorper vitae pulvinar eu, dignissim lacinia dolor. In augue libero, mattis vitae tincidunt id, aliquet in ex. Sed quis velit vel ipsum semper fermentum eu lobortis nibh. Nullam at nisi vestibulum, tristique turpis sed, lacinia arcu. In pretium mauris id imperdiet pulvinar. Duis bibendum vulputate lacus non vulputate. Duis ac lacinia quam, eget suscipit nunc. Nullam congue, metus quis pulvinar sollicitudin, leo libero luctus nulla, quis hendrerit elit nibh a purus. Nullam nisl ante, condimentum et magna ut, tincidunt convallis massa. Nulla egestas diam porttitor, convallis orci quis, lobortis odio. Aenean et diam sed nibh ornare cursus ac eget neque. Phasellus nisi odio, eleifend in mauris sit amet, convallis consequat metus.</p>
+
+<p>Suspendisse convallis eu ligula volutpat tempor. Nullam a sagittis nunc. Fusce aliquet nisi ut aliquet vestibulum. Ut ut justo neque. In augue est, posuere et vestibulum ut, lacinia vitae ligula. Donec blandit tellus sit amet commodo finibus. Vestibulum accumsan varius nulla, in volutpat dolor molestie vitae. Pellentesque at aliquam leo. Suspendisse vehicula congue sollicitudin. Sed tellus diam, gravida non urna vestibulum, posuere tristique lectus. Proin vitae nulla et lacus maximus rhoncus quis id mi. Nullam lacinia elementum scelerisque.</p>
+
+<p>Nam venenatis, lacus ut elementum placerat, ligula sapien mattis dui, vitae pharetra diam urna a leo. Praesent condimentum sagittis auctor. Pellentesque congue erat vel nunc ullamcorper viverra. Morbi eleifend blandit ullamcorper. Morbi eu nulla elit. Maecenas vel tellus consequat, commodo mauris nec, vulputate ex. Nunc nec ante aliquam ligula volutpat pellentesque. In lacus purus, ornare at turpis non, rhoncus ultricies libero. Quisque odio mauris, hendrerit ultrices pretium id, placerat quis nunc. Pellentesque gravida nulla ac dictum gravida. Suspendisse vel mollis massa, nec bibendum arcu.</p>
+
+<p>Proin quis nisl convallis, ultrices nisi molestie, finibus urna. Cras vel commodo lectus. Ut aliquam congue venenatis. Vestibulum porta purus ac sem consectetur, vel pretium erat condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida lacinia orci sit amet molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ac ex sapien. Praesent posuere libero gravida mauris facilisis viverra. Suspendisse sodales nec urna at fringilla. Sed vitae nunc a sem lacinia lobortis.</p>
+</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Map-->
+    <div id="container">
+      <div id="map">
+        <script src="js/map.js"></script>
+      </div>
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+  </html>
