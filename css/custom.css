@@ -211,3 +211,22 @@ input[type="radio"], input[type="checkbox"] {
     display: none !important;
   }
 }
+
+/*Navbar*/
+@media (min-width: 768px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+}
