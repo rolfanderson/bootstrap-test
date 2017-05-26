@@ -28,14 +28,14 @@ a:hover, a:focus {
   text-indent: -50px ;
 }
 
-.fa-question {
+/*.fa-question {
   font-size: 1.7em;
   margin: 0;
   position: absolute;
   top: 55%;
   left: 45%;
   transform: translate(-50%, -50%);
-}
+}*/
 
 popup {
   margin: 0;
