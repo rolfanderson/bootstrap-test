@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.css">
-  	<script src="https://unpkg.com/leaflet-easybutton@2.0.0/src/easy-button.js"></script>
-
-    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
-
-    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head>
@@ -40,20 +33,14 @@
     <div id="container">
       <div id="sidebar">
         <div class="sidebar-wrapper">
-          <div class="panel panel-default" id="features">
+          <div class="panel panel-default" id="toc">
             <div class="panel-heading">
               <h4 class="panel-title">Table of Contents
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
+              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h4>
             </div>
-
             <div>
-              <table class="table table-hover" id="#">
-                <thead class="hidden">
-                  <tr>
-                    <th>Head</th>
-                  <tr>
-                </thead>
-                <tbody class="list">
+              <table class="table table-hover">
+              <div class="list">
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#introduction">Introduction</div></li>
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#monumentality">Monumentality</div></li>
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#thanotourism">Thanotourism</div></li>
@@ -61,15 +48,13 @@
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#augmentedreality">Augmented Reality</div></li>
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#mortimer">Memento Mortimer</div></li>
                 <li class="list-group-item"><div class="clickable" data-toggle="modal" data-target="#references">References</div></li>
-                </tbody>
+              </div>
               </table>
             </div>
           </div>
         </div>
       </div>
-      <div id="map">
-        <!--Insert script here? -->
-      </div>
+      <div id="map"></div>
     </div>
   <!--End Sidebar-->
 
@@ -335,13 +320,9 @@ Minnesota Press, 2005.</p>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
-
-    <script src="js/app.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
