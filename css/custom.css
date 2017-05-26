@@ -9,6 +9,20 @@ p, blockquote {
   font-size: 18px;
 }
 
+h4 {
+  font-weight: bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #428BCA;
+    text-decoration: none;
+}
+
 .hanging {
   padding-left: 50px ;
   text-indent: -50px ;
