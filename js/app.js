@@ -322,6 +322,7 @@ map = L.map("map", {
   center: [28.4187304,-81.581206],
   layers: [disney],
   zoomControl: false,
+  scrollWheelZoom: false,
   attributionControl: false
 });
 
