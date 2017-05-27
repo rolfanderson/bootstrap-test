@@ -30,10 +30,10 @@ a:hover, a:focus {
 
 .fa-question {
   margin: 0;
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: 20%;
   left: 20%;
-  /*transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
 }
 
 popup {
@@ -43,10 +43,12 @@ popup {
   font-weight: bold;
 }
 
-#logo {
-  font-size: 1.75em;
-  font-weight: bold;
-  color: white;
+.logo {
+  width: 45px;
+  position: absolute;
+  top: 4.5px;
+  left: 10px;
+  cursor: pointer;
 }
 
 /*Imported from Bootleaf*/
