@@ -23,6 +23,15 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+#logotext {
+  position: absolute;
+  top: 5px;
+  left: 59px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
 .hanging {
   padding-left: 50px ;
   text-indent: -50px ;
@@ -51,14 +60,6 @@ popup {
   cursor: pointer;
 }
 
-#logotext {
-  float: right;
-  top: 5px;
-  left: 59px;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-}
 
 /*Imported from Bootleaf*/
 html, body, #container {
