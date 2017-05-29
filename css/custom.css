@@ -51,8 +51,8 @@ popup {
   cursor: pointer;
 }
 
-.logotext {
-  position: absolute;
+#logotext {
+  float: right;
   top: 5px;
   left: 59px;
   font-size: 30px;
