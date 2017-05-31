@@ -88,7 +88,7 @@ var attributionControl = L.control({
 });
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
-  div.innerHTML = "<span class='hidden-xs'>Developed by <a href='#'>Project Mortimer</a> </span><a href='#' onclick='$(\"#attributionModal\").modal(\"show\"); return false;'></a>";
+  div.innerHTML = "<span class='hidden-xs'>Developed by </span><a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'>Project Mortimer</a>";
   return div;
 };
 map.addControl(attributionControl);
@@ -96,11 +96,6 @@ map.addControl(attributionControl);
 var zoomControl = L.control.zoom({
   position: "bottomright"
 }).addTo(map);
-
-/*$("#sidebar-hide-btn").click(function() {
-  animateSidebar();
-  return false;
-});*/
 
 L.easyButton({
   position: 'bottomright',
