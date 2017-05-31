@@ -97,12 +97,18 @@ var zoomControl = L.control.zoom({
   position: "bottomright"
 }).addTo(map);
 
+/*$("#sidebar-hide-btn").click(function() {
+  animateSidebar();
+  return false;
+});*/
+
 L.easyButton({
   position: 'bottomright',
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
-      alert('Search the map to reveal abject sacrifices.');
+      animateSidebar();
+      return false;
     },
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
