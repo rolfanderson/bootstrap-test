@@ -88,7 +88,7 @@ var attributionControl = L.control({
 });
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
-  div.innerHTML = "<span class='hidden-xs'>Developed by </span><a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'>Project Mortimer</a>";
+  div.innerHTML = "<span class='hidden-xs'>Developed by <a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'>Project Mortimer</a></span>";
   return div;
 };
 map.addControl(attributionControl);
