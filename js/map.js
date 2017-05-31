@@ -104,7 +104,7 @@ L.easyButton({
     onClick: function(button, map){
       alert('Search the map to reveal abject sacrifices.');
     },
-    icon: '<i class="fa fa-question fa-lg"></i>'
+    icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
 }).addTo(map);
 
