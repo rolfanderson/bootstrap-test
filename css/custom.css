@@ -34,7 +34,14 @@ a:hover, a:focus {
   width: 45px;
   position: absolute;
   top: 4.5px;
-  left: 6px;
+  left: 7px;
+  cursor: pointer;
+}
+
+.logo-lg {
+  height: 50px;
+  position: absolute;
+  left: 58px;
   cursor: pointer;
 }
 
