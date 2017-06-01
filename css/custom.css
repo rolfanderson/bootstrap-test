@@ -30,8 +30,7 @@ a:hover, a:focus {
 
 .logotext {
   position: absolute;
-  left: 50%;
-  margin-left: -140px;
+  left: 60px;
   font-size: 30px;
   color: white;
   cursor: pointer;
