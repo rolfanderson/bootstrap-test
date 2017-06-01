@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 .navbar-inverse {
     background-color: #473d86;
@@ -32,7 +33,8 @@ a:hover, a:focus {
   position: absolute;
   top: 3px;
   left: 57px;
-  font-size: 30px;
+  font-weight: 800;
+  font-size: 29px;
   color: white;
   cursor: pointer;
 }
