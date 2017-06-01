@@ -30,6 +30,7 @@ a:hover, a:focus {
 
 .logotext {
   position: absolute;
+  top: 3px;
   left: 57px;
   font-size: 30px;
   color: white;
