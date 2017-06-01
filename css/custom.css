@@ -30,6 +30,15 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 1px;
+  width: auto;
+}
+
 .logo {
   width: 45px;
   position: absolute;
@@ -38,7 +47,7 @@ a:hover, a:focus {
   cursor: pointer;
 }
 
-.logo-lg {
+#logo-lg {
   height: 50px;
   position: absolute;
   left: 58px;
