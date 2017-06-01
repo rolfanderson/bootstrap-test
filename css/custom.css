@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
+.navbar-inverse {
+    background-color: #473d86;
+    border-color: #E7E7E7;
+}
+
 h1, h2, h3, header {
   font-family: 'Roboto Slab', serif;
 }
@@ -25,23 +30,16 @@ a:hover, a:focus {
 
 .logotext {
   position: absolute;
-  top: 4px;
-  left: 56px;
-  font-size: 29px;
+  left: 50%;
+  margin-left: -140px;
+  font-size: 30px;
   color: white;
+  cursor: pointer;
 }
 
 .hanging {
   padding-left: 50px ;
   text-indent: -50px ;
-}
-
-.fa-question {
-  margin: 0;
-  position: relative;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
 }
 
 .material-icons, .icon-text, .mdi {
