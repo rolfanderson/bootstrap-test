@@ -102,7 +102,7 @@ L.easyButton({
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
-      alert('Search the map to reveal abject sacrifices. Consult the sidebar for more information.');
+      alert('Search the map to reveal abject sacrifices. For more information, click the logo to consult the sidebar.');
     },
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]

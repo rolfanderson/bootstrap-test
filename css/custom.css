@@ -30,19 +30,8 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-/*.navbar-brand {
-  padding: 0px;
-}
-.navbar-brand>img {
-  height: 100%;
-  padding: 2px;
-  padding-left: 7px;
-  background-color: #473d86;
-  width: auto;
-}*/
-
-.logo {
-  width: 45px;
+.logo-btn {
+  width: 40px;
   position: absolute;
   top: 4.5px;
   left: 7px;
@@ -53,8 +42,7 @@ a:hover, a:focus {
   height: 45px;
   position: absolute;
   top: 3px;
-  left: 56px;
-  cursor: pointer;
+  left: 53px;
 }
 
 .hanging {
