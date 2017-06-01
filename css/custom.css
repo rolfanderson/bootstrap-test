@@ -31,10 +31,10 @@ a:hover, a:focus {
 }
 
 .logo-btn {
-  width: 43px;
+  width: 40px;
   position: absolute;
-  top: 2.5px;
-  left: 5px;
+  top: 4.5px;
+  left: 7px;
   cursor: pointer;
 }
 
