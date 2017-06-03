@@ -37,6 +37,7 @@ function sidebarClick(id) {
 
 var disney = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
+  minZoom: 14,
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 });
 
@@ -45,7 +46,7 @@ map = L.map("map", {
   center: [28.4187304,-81.581206],
   layers: [disney],
   zoomControl: false,
-  scrollWheelZoom: false,
+  scrollWheelZoom: true,
   attributionControl: false
 });
 

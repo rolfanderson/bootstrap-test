@@ -2,9 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
+
 .navbar-inverse {
     background-color: #473d86;
     border-color: #E7E7E7;
+}
+
+.center-text{
+  text-align: center;
 }
 
 h1, h2, h3, header {
@@ -40,9 +45,9 @@ a:hover, a:focus {
 
 .logo-text {
   height: 45px;
-  position: absolute;
+  /**position: absolute;**/
   top: 3px;
-  left: 53px;
+  /**left: 53px;**/
 }
 
 .hanging {
