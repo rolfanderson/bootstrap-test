@@ -116,7 +116,7 @@ body {
   border-radius: 0px !important;
 }
 
-#table-contents li:hover, #table-contents li:active {
+#table-contents li:hover, #table-contents li:active, #table-contents li:focus {
   background-color: #F5F5F5;
   color: #3F51B5;
 }
