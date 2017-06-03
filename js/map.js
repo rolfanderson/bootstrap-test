@@ -88,7 +88,7 @@ var attributionControl = L.control({
 });
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
-  div.innerHTML = "<span class='hidden-xs'>Developed by <a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'>Project Mortimer</a></span>";
+  div.innerHTML = "<span class='hidden-xs'>Developed by Project Mortimer<a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'></a></span>";
   return div;
 };
 map.addControl(attributionControl);
@@ -102,7 +102,7 @@ L.easyButton({
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
-      alert('Explore the map to reveal abject sacrifices. Consult the sidebar for more information.');
+      $('#about').modal('show');
     },
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
