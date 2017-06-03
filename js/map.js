@@ -1,5 +1,5 @@
 var map;
-
+devMode=true;
 $(window).resize(function() {
   sizeLayerControl();
 });
@@ -100,6 +100,7 @@ var zoomControl = L.control.zoom({
 
 L.easyButton({
   position: 'bottomright',
+  id:"about-button",
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
@@ -108,6 +109,8 @@ L.easyButton({
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
 }).addTo(map);
+
+if(!devMode) document.getElementById('about-button').click();
 
 /*Larger screens get expanded layer control and visible sidebar*/
 if (document.body.clientWidth <= 767) {
