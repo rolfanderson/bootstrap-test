@@ -22,10 +22,10 @@ $("#sidebar-toggle-btn").click(function() {
   }, 2000);
 });*/
 
-$("#sidebar-hide-btn").click(function() {
+/*$("#sidebar-hide-btn").click(function() {
   animateSidebar();
   return false;
-});
+});*/
 
 function animateSidebar() {
   $("#sidebar").animate({
@@ -43,10 +43,10 @@ function sidebarClick(id) {
   }
 }
 
-var disney = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+var disney = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   minZoom: 14,
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
 map = L.map("map", {

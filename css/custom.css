@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
-#sidebar a{
-  font-family: 'Raleway', sans-serif;
-
-}
-
 .navbar-inverse {
     background-color: #3F51B5;
     border: none;
@@ -50,7 +45,6 @@ a:hover, a:focus {
 .logo-text {
   height: 45px;
   margin-top: 3px;
-  /**left: 53px;**/
 }
 
 .hanging {
@@ -67,7 +61,7 @@ a:hover, a:focus {
 }
 
 .leaflet-bottom .leaflet-control {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .leaflet-bottom .easy-button-container {
@@ -107,6 +101,11 @@ body {
   float: left;
   box-shadow: 10px 0 10px rgba(0,0,0,0.5);
   z-index: 2;
+}
+
+#sidebar a {
+  font-family: 'Raleway', sans-serif;
+
 }
 
 #map {
