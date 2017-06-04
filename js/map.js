@@ -42,7 +42,7 @@ function sidebarClick(id) {
 
 var disney = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  minZoom: 16,
+  minZoom: 15,
   attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
