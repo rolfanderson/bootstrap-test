@@ -1,8 +1,8 @@
 var map;
 /*devMode=true;*/
-$(window).resize(function() {
+/*$(window).resize(function() {
   sizeLayerControl();
-});
+});*/
 
 $(document).on("click", ".feature-row", function(e) {
   $(document).off("mouseout", ".feature-row", clearHighlight);
