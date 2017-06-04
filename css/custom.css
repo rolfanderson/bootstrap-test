@@ -66,6 +66,14 @@ a:hover, a:focus {
   transform: translate(-50%, -50%);
 }
 
+.leaflet-bottom .leaflet-control {
+  margin-bottom: 30px;
+}
+
+.leaflet-bottom .easy-button-container {
+  margin-bottom: 10px;
+}
+
 popup {
   margin: 0;
   position: relative;

@@ -97,22 +97,21 @@ var attributionControl = L.control({
 });
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
-  div.innerHTML = "<span class='hidden-xs'>Developed by Project Mortimer<a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'></a></span>";
+  div.innerHTML = "<span class='hidden-xs'><a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'></a></span>";
   return div;
 };
 map.addControl(attributionControl);
 
 var zoomControl = L.control.zoom({
-  position: "topright"
+  position: "bottomright"
 }).addTo(map);
 
 L.easyButton({
-  position: 'topright',
+  position: 'bottomright',
   id:'about-button',
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
-      console.log('Hello');
       $('#about').modal('show');
     },
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
