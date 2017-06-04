@@ -103,12 +103,12 @@ attributionControl.onAdd = function (map) {
 map.addControl(attributionControl);
 
 var zoomControl = L.control.zoom({
-  position: "bottomright"
+  position: "topright"
 }).addTo(map);
 
 L.easyButton({
-  position: 'bottomright',
-id:'about-button',
+  position: 'topright',
+  id:'about-button',
   leafletClasses: true,
   states:[{
     onClick: function(button, map){
