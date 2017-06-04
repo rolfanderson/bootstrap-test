@@ -103,11 +103,6 @@ body {
   z-index: 2;
 }
 
-#sidebar a {
-  font-family: 'Raleway', sans-serif;
-
-}
-
 #map {
   position: fixed;
   width: 100%;

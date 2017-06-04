@@ -14,13 +14,6 @@ $("#sidebar-toggle-btn").click(function() {
   return false;
 });
 
-/*$("#sidebar-toggle-btn").click(function() {
-  var bd = $('<div class="modal-backdrop"></div>');
-  bd.appendTo(document.body);
-  setTimeout(function() {
-    bd.remove();
-  }, 2000);
-});*/
 
 /*$("#sidebar-hide-btn").click(function() {
   animateSidebar();
