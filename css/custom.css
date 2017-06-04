@@ -51,6 +51,7 @@ a:hover, a:focus {
   text-indent: -50px ;
 }
 
+/**Map**/
 .material-icons, .icon-text, .mdi {
   margin: 0;
   position: absolute;
@@ -82,13 +83,6 @@ html, body, #container {
 }
 /*body {
   padding-top: 0px;
-}*/
-
-/*.modal-backdrop {
-  position: absolute;
-  top: 50px;
-  left: 250px;
-  opacity: 0.5;
 }*/
 
 #sidebar {
