@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
 
 .navbar-inverse {
     background-color: #3949AB;
@@ -15,7 +19,7 @@ h1, h2, h3, header {
 }
 
 p, blockquote {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Droid Serif', serif;
   font-size: 18px;
 }
 

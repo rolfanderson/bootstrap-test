@@ -3,6 +3,10 @@ var map;
 /*$(window).resize(function() {
   sizeLayerControl();
 });*/
+/*Open modal on load
+$(document).ready(function(){
+    $('#about').modal('show');
+});*/
 
 $(document).on("click", ".feature-row", function(e) {
   $(document).off("mouseout", ".feature-row", clearHighlight);
@@ -23,7 +27,7 @@ $("#sidebar-toggle-btn").click(function() {
 function animateSidebar() {
   $("#sidebar").animate({
     width: "toggle"
-  }, 450, function() {
+  }, 350, function() {
    // map.invalidateSize();
   });
 }
