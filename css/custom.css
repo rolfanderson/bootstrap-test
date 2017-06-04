@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 .navbar-inverse {
-    background-color: #3F51B5;
+    background-color: #3949AB;
     border: none;
 }
 
@@ -125,7 +125,7 @@ html, body, #container {
 
 #table-contents li:hover, #table-contents li:active, #table-contents li:focus {
   background-color: #F5F5F5;
-  color: #3F51B5;
+  color: #3949AB;
 }
 
 .panel-heading{
