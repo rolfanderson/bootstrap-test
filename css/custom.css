@@ -94,7 +94,8 @@ body {
 #map {
   width: auto;
   height: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: -10 !important;
 }
 
 #toc {
