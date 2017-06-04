@@ -21,7 +21,8 @@ $("#sidebar-hide-btn").click(function() {
 
 function animateSidebar() {
   $("#sidebar").animate({
-    width: "toggle"
+    translateX: 250px;
+    easing: "cubic-bezier(0.42, 0, 0.58, 1)";
   }, 350, function() {
    // map.invalidateSize();
   });
