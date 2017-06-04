@@ -23,7 +23,7 @@ $("#sidebar-toggle-btn").click(function() {
 function animateSidebar() {
   $("#sidebar").animate({
     width: "toggle"
-  }, 350, function() {
+  }, 450, function() {
    // map.invalidateSize();
   });
 }

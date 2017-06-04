@@ -59,13 +59,13 @@ a:hover, a:focus {
   transform: translate(-50%, -50%);
 }
 
-.leaflet-bottom .leaflet-control {
+/*.leaflet-bottom .leaflet-control {
   margin-bottom: 30px;
 }
 
 .leaflet-bottom .easy-button-container {
   margin-bottom: 10px;
-}
+}*/
 
 popup {
   margin: 0;
@@ -80,9 +80,9 @@ html, body, #container {
   width: 100%;
   overflow: hidden;
 }
-body {
-  padding-top: 50px;
-}
+/*body {
+  padding-top: 0px;
+}*/
 
 /*.modal-backdrop {
   position: absolute;
@@ -94,6 +94,7 @@ body {
 #sidebar {
   position: fixed;
   display: block;
+  padding-top: 50px;
   width: 250px;
   height: 100%;
   max-width: 100%;
