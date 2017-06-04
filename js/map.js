@@ -31,7 +31,7 @@ function animateSidebar() {
   $("#sidebar").animate({
     width: "toggle"
   }, 350, function() {
-    map.invalidateSize();
+   // map.invalidateSize();
   });
 }
 
@@ -39,7 +39,7 @@ function sidebarClick(id) {
   /* Hide sidebar and go to the map on small screens */
   if (document.body.clientWidth <= 767) {
     $("#sidebar").hide();
-    map.invalidateSize();
+   // map.invalidateSize();
   }
 }
 
