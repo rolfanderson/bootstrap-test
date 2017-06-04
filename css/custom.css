@@ -83,6 +83,13 @@ body {
   padding-top: 50px;
 }
 
+/*.modal-backdrop {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  opacity: 0.5;
+}*/
+
 #sidebar {
   display: block;
   width: 250px;
@@ -94,7 +101,7 @@ body {
 #map {
   width: auto;
   height: 100%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
 }
 
 #toc {
