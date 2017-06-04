@@ -21,7 +21,7 @@ $("#sidebar-hide-btn").click(function() {
 
 function animateSidebar() {
   $("#sidebar").animate({
-    translateX: "250px"
+    width: "toggle"
   }, 350, function() {
    // map.invalidateSize();
   });
