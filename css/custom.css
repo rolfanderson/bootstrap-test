@@ -14,6 +14,7 @@
 .navbar-inverse {
     background-color: #3949AB;
     border: none;
+    z-index: 2;
 }
 
 .center-text{
@@ -26,7 +27,7 @@ h1, h2, h3, header {
 
 p, blockquote {
   font-family: 'Droid Serif', serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 h4 {
@@ -57,12 +58,12 @@ a:hover, a:focus {
 }
 
 .epigraph {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .epigraph p {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
 }
 
 .video {
@@ -108,13 +109,13 @@ html, body, #container {
 #sidebar {
   position: fixed;
   display: block;
-  padding-top: 50px;
+  padding-top: 0px;
   width: 250px;
   height: 100%;
   max-width: 100%;
   float: left;
   box-shadow: 10px 0 10px rgba(0,0,0,0.5);
-  z-index: 2;
+  z-index: 3;
 }
 
 #map {
@@ -138,7 +139,7 @@ html, body, #container {
 
 #table-contents li {
   background-color: #E0E0E0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border: none !important;
@@ -152,11 +153,9 @@ html, body, #container {
 
 .panel-heading{
    width: 250px;
-   background-color: #757575 !important;
+   height: 50px;
+   background-color: #3949AB !important;
    border-radius: 0px !important;
-   font-family: 'Open Sans', sans-serif !important;
-   font-weight: 800 !important;
-   color: white !important;
 }
 .panel-body{
   width: 250px;

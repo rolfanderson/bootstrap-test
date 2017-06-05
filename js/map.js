@@ -19,6 +19,11 @@ $("#sidebar-toggle-btn").click(function() {
   return false;
 });
 
+$("#sidebar-hide-btn").click(function() {
+  animateSidebar();
+  return false;
+});
+
 function animateSidebar() {
   $("#sidebar").animate({
     width: "toggle"
