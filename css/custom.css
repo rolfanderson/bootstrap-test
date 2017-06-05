@@ -14,7 +14,6 @@
 .navbar-inverse {
     background-color: #3949AB;
     border: none;
-    z-index: 2;
 }
 
 .center-text{
@@ -109,7 +108,7 @@ html, body, #container {
 #sidebar {
   position: fixed;
   display: block;
-  padding-top: 0px;
+  padding-top: 50px;
   width: 250px;
   height: 100%;
   max-width: 100%;
