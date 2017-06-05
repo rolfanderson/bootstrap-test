@@ -6,6 +6,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif");
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 @import url("https://fonts.googleapis.com/css?family=Crete+Round");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
@@ -25,7 +26,7 @@ h1, h2, h3, header {
 
 p, blockquote {
   font-family: 'Droid Serif', serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h4 {
@@ -60,7 +61,8 @@ a:hover, a:focus {
 }
 
 .epigraph p {
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 .video {
@@ -137,7 +139,7 @@ html, body, #container {
 #table-contents li {
   background-color: #E0E0E0;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   border: none !important;
   border-radius: 0px !important;
