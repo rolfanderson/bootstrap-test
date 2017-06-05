@@ -3,6 +3,7 @@ var map;
 /*$(window).resize(function() {
   sizeLayerControl();
 });*/
+
 /*Open modal on load
 $(document).ready(function(){
     $('#about').modal('show');
@@ -17,12 +18,6 @@ $("#sidebar-toggle-btn").click(function() {
   animateSidebar();
   return false;
 });
-
-
-/*$("#sidebar-hide-btn").click(function() {
-  animateSidebar();
-  return false;
-});*/
 
 function animateSidebar() {
   $("#sidebar").animate({

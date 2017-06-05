@@ -73,6 +73,12 @@ a:hover, a:focus {
   text-indent: -40px ;
 }
 
+.modal-backdrop {
+  top: 50px;
+  left: 250px;
+  opacity: 0.5;
+}
+
 /**Map**/
 .material-icons, .icon-text, .mdi {
   margin: 0;
