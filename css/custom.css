@@ -57,7 +57,7 @@ a:hover, a:focus {
 
 #table-contents li {
   background-color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border: none  !important;
@@ -179,7 +179,7 @@ html, body, #container {
    height: 75px;
    padding: 10px 15px;
    background-color: #FFFFFF !important;
-   
+
    border-radius: 0px !important;
 }
 .panel-body{
