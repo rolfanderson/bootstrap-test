@@ -13,7 +13,9 @@ $(document).on("click", ".feature-row", function(e) {
   $(document).off("mouseout", ".feature-row", clearHighlight);
   sidebarClick(parseInt($(this).attr("id"), 10));
 });
+
 var isSidebarOpen = false;
+
 $("#sidebar-toggle-btn").click(function() {
   animateSidebar();
   isSidebarOpen = !!!isSidebarOpen;
@@ -21,10 +23,12 @@ $("#sidebar-toggle-btn").click(function() {
   return false;
 });
 
-/*$("#sidebar-hide-btn").click(function() {
-  animateSidebar();
-  return false;
-});*/
+//*********New Sidebar Functions*************//
+$("body").click(function(event) {
+  if(!$(event.target).closest('#sidebar').length) {
+    if($('#sidebar').is(":visible")) { $('#sidebar').animate({
+      width: "toggle" }
+); } } })
 
 function animateSidebar() {
   $("#sidebar").animate({
