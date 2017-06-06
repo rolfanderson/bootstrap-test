@@ -4,14 +4,14 @@ var map;
   sizeLayerControl();
 });*/
 
-/*Open modal on load
-$(document).ready(function(){
-    $('#about').modal('show');
-});*/
+function showSnackbar() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}
 
-$(document).on("click", ".feature-row", function(e) {
-  $(document).off("mouseout", ".feature-row", clearHighlight);
-  sidebarClick(parseInt($(this).attr("id"), 10));
+$(document).ready(function(){
+    showSnackbar();
 });
 
 var isSidebarOpen = false;
