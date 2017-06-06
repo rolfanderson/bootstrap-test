@@ -13,9 +13,11 @@ $(document).on("click", ".feature-row", function(e) {
   $(document).off("mouseout", ".feature-row", clearHighlight);
   sidebarClick(parseInt($(this).attr("id"), 10));
 });
-
+var isSidebarOpen = false;
 $("#sidebar-toggle-btn").click(function() {
   animateSidebar();
+  isSidebarOpen = !!!isSidebarOpen;
+  //TODO: BASED ON THE VALUE OF isSidebarOpen ADD OR REMOVE CUSTOM MODAL BACKDROP CLASS
   return false;
 });
 
