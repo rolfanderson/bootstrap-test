@@ -1,18 +1,21 @@
-var map;
-/*devMode=true;*/
+/**** Initial ****/
+
 /*$(window).resize(function() {
   sizeLayerControl();
 });*/
 
-/*function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}*/
+function sidebarClick(id) {
+  // Hide sidebar and go to the map on small screens
+  if (document.body.clientWidth <= 767) {
+    $("#sidebar").hide();
+   // map.invalidateSize();
+  }
+}
 
-function sidebar_close() {
-    //document.getElementById("sidebar").style.display = "none";
-    animateSidebar();
-    document.getElementById("myOverlay").style.display = "none";
+if (document.body.clientWidth <= 767) {
+  var isCollapsed = true;
+} else {
+  var isCollapsed = false;
 }
 
 function showSnackbar() {
@@ -25,6 +28,7 @@ $(document).ready(function(){
     showSnackbar();
 });
 
+/**** Sidebar ****/
 var isSidebarOpen = false;
 
 $("#sidebar-toggle-btn").click(function() {
@@ -35,12 +39,10 @@ $("#sidebar-toggle-btn").click(function() {
   return false;
 });
 
-//*********New Sidebar Functions*************//
-$("#map").click(function(event) {
-  if(!$(event.target).closest('#sidebar').length) {
-    if($('#sidebar').is(":visible")) { $('#sidebar').animate({
-      width: "toggle" }
-); } } })
+function sidebar_close() {
+    animateSidebar();
+    document.getElementById("myOverlay").style.display = "none";
+}
 
 function animateSidebar() {
   $("#sidebar").animate({
@@ -50,13 +52,14 @@ function animateSidebar() {
   });
 }
 
-function sidebarClick(id) {
-  /* Hide sidebar and go to the map on small screens */
-  if (document.body.clientWidth <= 767) {
-    $("#sidebar").hide();
-   // map.invalidateSize();
-  }
-}
+$("#map").click(function(event) {
+  if(!$(event.target).closest('#sidebar').length) {
+    if($('#sidebar').is(":visible")) { $('#sidebar').animate({
+      width: "toggle" }
+); } } })
+
+/****** Map ******/
+var map;
 
 var disney = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
@@ -106,7 +109,7 @@ var marker =
     L.marker([28.417928, -81.583496], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
 
 
-/* Attribution control */
+/**** Attribution and Control Buttons ****/
 var attributionControl = L.control({
   position: "bottomright"
 });
@@ -132,12 +135,3 @@ L.easyButton({
     icon: '<i class="mdi mdi-help mdi-18px" id="info-btn"></i>'
   }]
 }).addTo(map);
-
-//if(!devMode)document.getElementById('about-button').click();
-
-/*Larger screens get expanded layer control and visible sidebar*/
-if (document.body.clientWidth <= 767) {
-  var isCollapsed = true;
-} else {
-  var isCollapsed = false;
-}
