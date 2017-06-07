@@ -7,7 +7,7 @@ var map;
 function showSnackbar() {
     var x = document.getElementById("snackbar")
     x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
 }
 
 $(document).ready(function(){
@@ -117,7 +117,7 @@ L.easyButton({
     onClick: function(button, map){
       $('#about').modal('show');
     },
-    icon: '<i class="mdi mdi-help mdi-18px"></i>'
+    icon: '<i class="mdi mdi-help mdi-18px" id="info-btn"></i>'
   }]
 }).addTo(map);
 
