@@ -4,6 +4,17 @@ var map;
   sizeLayerControl();
 });*/
 
+/*function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}*/
+
+function sidebar_close() {
+    //document.getElementById("sidebar").style.display = "none";
+    animateSidebar();
+    document.getElementById("myOverlay").style.display = "none";
+}
+
 function showSnackbar() {
     var x = document.getElementById("snackbar")
     x.className = "show";
@@ -18,6 +29,7 @@ var isSidebarOpen = false;
 
 $("#sidebar-toggle-btn").click(function() {
   animateSidebar();
+  document.getElementById("myOverlay").style.display = "block";
   isSidebarOpen = !!!isSidebarOpen;
   //TODO: BASED ON THE VALUE OF isSidebarOpen ADD OR REMOVE CUSTOM MODAL BACKDROP CLASS
   return false;

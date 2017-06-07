@@ -84,7 +84,7 @@ a:hover, a:focus {
   max-width: 100%;
   float: left;
   box-shadow: 10px 0 10px rgba(0,0,0,0.5);
-  z-index: 4;
+  z-index: 5;
 }
 
 #toc {
