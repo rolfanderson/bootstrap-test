@@ -30,10 +30,20 @@ blockquote {
   border-bottom: 1px solid lightgrey;
 }
 
-.epigraph p {
+.epigraph p, blockquote {
   font-family: 'Times New Roman', serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.caption p {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+img.picture {
+  padding-top: 15px;
 }
 
 a {
