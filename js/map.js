@@ -4,7 +4,7 @@
   sizeLayerControl();
 });*/
 
-function sidebarClick(id) {
+/*function sidebarClick(id) {
   // Hide sidebar and go to the map on small screens
   if (document.body.clientWidth <= 767) {
     $("#sidebar").hide();
@@ -16,7 +16,11 @@ if (document.body.clientWidth <= 767) {
   var isCollapsed = true;
 } else {
   var isCollapsed = false;
-}
+}*/
+
+$(document).ready(function() {
+    $("#sidebar").hide();
+});
 
 function showSnackbar() {
     var x = document.getElementById("snackbar")
