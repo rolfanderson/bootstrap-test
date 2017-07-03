@@ -74,10 +74,16 @@ a:hover, a:focus {
 #table-contents li {
   background-color: #EFEFEF;
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold !important;
   border: none  !important;
   border-radius: 0px !important;
+}
+
+#table-contents i.mdi {
+  position: relative;
+  top: 1px;
+  padding-right: 13px;
 }
 
 #table-contents li:hover, #table-contents li:active, #table-contents li:focus {
@@ -120,6 +126,11 @@ a:hover, a:focus {
 .panel-body{
   width: 250px;
 }
+
+.pre-scrollable {
+  max-height: none;
+}
+
 .feature-row {
   cursor: pointer;
   width: 250px;
@@ -146,7 +157,7 @@ a:hover, a:focus {
 .navbar-inverse {
     background-color: #465c8b;
     border: none;
-    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0px 0 rgba(0,0,0,0.3);
     z-index: 2;
 }
 

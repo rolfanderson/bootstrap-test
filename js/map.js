@@ -43,6 +43,11 @@ $("#sidebar-toggle-btn").click(function() {
   return false;
 });
 
+/*$("#sidebar-toggle-btn").click(function(e) {
+  e.preventDefault();
+  $("#sidebar").toggleClass("toggled");
+});*/
+
 function sidebar_close() {
     animateSidebar();
     document.getElementById("myOverlay").style.display = "none";

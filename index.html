@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   </head>
+
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -34,31 +35,35 @@
     <div class="modal-backdrop" hidden="true"
     onclick="sidebar_close()" style="cursor:pointer" id="myOverlay"></div>
     <div id="container">
-      <div id="sidebar">
+      <div id="sidebar" class="pre-scrollable">
         <div class="sidebar-wrapper">
           <div class="panel panel-default" id="toc">
             <div class="panel-heading">
               <img class="logo" src="img/mortimerhead.png"></img>
             </div>
-            <div class="pre-scrollable" id="table-contents">
+            <div id="table-contents">
               <table class="table table-hover">
               <nav class="list">
+                <li class="list-group-item clickable" data-toggle="modal" data-target="#deardisney">
+                  <span class="text-nowrap"><i class="mdi mdi-email-outline mdi-18px"></i>Dear Disney</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#introduction">
-                  <span class="text-nowrap">Introduction</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-gondola mdi-18px"></i>Introduction</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#monumentality">
-                  <span class="text-nowrap">Monumentality</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-castle mdi-18px"></i>Monumentality</span></li>
+                <li class="list-group-item clickable" data-toggle="modal" data-target="#ulmer">
+                  <span class="text-nowrap"><i class="mdi mdi-pillar mdi-18px"></i>Electrate Academy</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#thanotourism">
-                  <span class="text-nowrap">Thanotourism</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-wallet-travel mdi-18px"></i>Thanotourism</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#deathrhet">
-                  <span class="text-nowrap">Death Rhetoric</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-skull mdi-18px"></i>Death Rhetoric</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#augmentedreality">
-                  <span class="text-nowrap">Augmented Reality</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-layers mdi-18px"></i>Augmented Reality</span></li>
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#mortimer">
-                  <span class="text-nowrap">Memento Mortimer</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-calendar-remove mdi-18px"></i>Memento Mortimer</span></li>
                 <!--<li class="list-group-item clickable" data-toggle="modal" data-target="#MEmorium">
                   <span class="text-nowrap">In MEmorium</span></li>-->
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#references">
-                  <span class="text-nowrap">References</span></li>
+                  <span class="text-nowrap"><i class="mdi mdi-format-quote-close mdi-18px"></i>References</span></li>
               </nav>
               </table>
             </div>
@@ -70,7 +75,7 @@
   <!--End Sidebar-->
 
   <div id="snackbar">
-    Search the map to reveal hidden sacrifices.
+    Search the map to reveal abject losses.
   </div>
 
 
@@ -99,6 +104,26 @@ entertainment's often overlooked consequences.</p>
       </div>
     </div>
 
+  <!-- Dear Disney -->
+    <div class="modal fade" id="deardisney" role="dialog" data-backdrop="false">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Dear Disney</h1>
+          </div>
+<article class="modal-body">
+<p>Letter goes here.</p>
+</article>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default exit-btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   <!-- Intro -->
     <div class="modal fade" id="introduction" role="dialog" data-backdrop="false">
       <div class="modal-dialog modal-lg">
@@ -118,6 +143,9 @@ journalism.”<br>—Gregory L. Ulmer, <i>Electronic Monuments</i></p>
 <p>“A Walt Disney World custodian plunged 40 feet to his death Sunday morning
 after clinging to the outside of a rising cable car that had swept him from a
 platform.”<br>—<i>Orlando Sentinel</i>, 14 February, 1999</p>
+<p>“...down from all/ Heights all levels of American breath layered in the lungs
+from the frail/ Chill of space to the loam where extinction slumbers...”
+<br>—James L. Dickey, “Falling”</p>
 </section>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue et
@@ -420,6 +448,31 @@ Cu sea fugit dicit voluptua, eos id tibique disputando. An vix.</p>
       </div>
     </div>
 
+  <!-- Ulmer on Disney -->
+    <div class="modal fade" id="ulmer" role="dialog" data-backdrop="false">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h1 class="modal-title">Electrate Academy</h1>
+          </div>
+<article class="modal-body">
+  <section class="video">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item"
+    src="https://www.youtube.com/embed/_KMjRey67pI"></iframe>
+    </div>
+  </section>
+</article>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default exit-btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Thanotourism -->
     <div class="modal fade" id="thanotourism" role="dialog" data-backdrop="false">
       <div class="modal-dialog modal-lg">
@@ -433,10 +486,21 @@ Cu sea fugit dicit voluptua, eos id tibique disputando. An vix.</p>
 <article class="modal-body">
 
 <section class="epigraph">
+<p>“The challenge of the EmerAgency is to show that tourism is capable of
+influencing public policy through bearing witness to base sacrifice”
+<br>—Gregory L. Ulmer</p>
+<p>“We must be insistently aware of how space can be made to hide consequences
+from, how relations of power and discipline are inscribed into the apparently
+innocent spatiality of social life, how human geographies become filled with
+politics and ideology.”
+<br>—Edward W. Soja</p>
 <p>“Order is imposed through power, and though one body orders a space to a
 particular end, that order is not necessarily recognized or obeyed by
-all who enter that space.”<br>—Sidney I. Dobrin, <i>Postcomposition</i></p>
+all who enter that space.”
+<br>—Sidney I. Dobrin, <i>Postcomposition</i></p>
 </section>
+
+<h3>Emplacement</h3>
 
 <p>Lorem ipsum dolor sit amet, no duo errem maluisset. Ne ius legimus praesent.
 Putent timeam disputando eu vis, vero dicam vivendum eu ius. No quod similique
@@ -497,6 +561,8 @@ duis ea nam, ut causae moderatius est. Eam dicunt luptatum te, no dolor
 scriptorem eos, eu assueverit eloquentiam sea. Ad viris tollit nostrud vix, vix
 ullum scriptorem ne. Sale dictas his ei, vis an suavitate dissentiunt
 liberavisse. Eum ei enim suavitate, commodo recteque expetenda ex qui.</p>
+
+<h3>From Dark Tourism to Thanotourism</h3>
 
 <p>Homero sanctus signiferumque ei mea. Pro fierent copiosae platonem id, per id
 nisl patrioque dissentiunt. Ei pri saepe assentior omittantur. Vix ea etiam
