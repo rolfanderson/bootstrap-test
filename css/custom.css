@@ -155,6 +155,7 @@ a:hover, a:focus {
   left: 16px;
   top: 8px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 img.logo {
