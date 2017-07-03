@@ -61,11 +61,11 @@ function animateSidebar() {
   });
 }
 
-$("#map").click(function(event) {
+/*$("#map").click(function(event) {
   if(!$(event.target).closest('#sidebar').length) {
     if($('#sidebar').is(":visible")) { $('#sidebar').animate({
       width: "toggle" }
-); } } })
+); } } })*/
 
 /****** Map ******/
 var map;
