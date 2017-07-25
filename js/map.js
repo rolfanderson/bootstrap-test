@@ -22,24 +22,18 @@ $(document).ready(function() {
     $("#sidebar").hide();
 });
 
-function showSnackbar() {
-    var x = document.getElementById("snackbar")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
-}
-
-$(document).ready(function(){
-    showSnackbar();
+$(document).ready(function() {
+    $("#hide").click(function(){
+        $("#snackbar").hide();
+    });
 });
 
 /**** Sidebar ****/
-var isSidebarOpen = false;
+
 
 $("#sidebar-toggle-btn").click(function() {
   animateSidebar();
   document.getElementById("myOverlay").style.display = "block";
-  isSidebarOpen = !!!isSidebarOpen;
-  //TODO: BASED ON THE VALUE OF isSidebarOpen ADD OR REMOVE CUSTOM MODAL BACKDROP CLASS
   return false;
 });
 

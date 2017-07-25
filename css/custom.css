@@ -205,46 +205,26 @@ img.logo {
 
 /*** Snackbar ***/
 #snackbar {
-    visibility: hidden;
     min-width: 100%;
     margin-left: -50%;
     background-color: #333;
     color: #fff;
     text-align: center;
-    border-radius: 2px;
-    padding: 16px;
+    border-radius: 0px;
+    padding: 8px;
     position: fixed;
-    z-index: 5;
+    z-index: 9;
     left: 50%;
-    bottom: 0px;
-    font-size: 16px;
-    opacity: 0.9;
+    bottom: 30px;
+    font-size: 17px;
+    padding: 12px;
 }
 
-#snackbar.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 5.5s;
-    animation: fadein 0.5s, fadeout 0.5s 5.5s;
-}
-
-@-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 0px; opacity: 0.7;}
-}
-
-@keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 0px; opacity: 0.7;}
-}
-
-@-webkit-keyframes fadeout {
-    from {bottom: 0px; opacity: 0.7;}
-    to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-    from {bottom: 0px; opacity: 0.7;}
-    to {bottom: 0; opacity: 0;}
+#hide {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #42A5F5;
+  cursor: pointer;
 }
 
 /**** Modals ****/
