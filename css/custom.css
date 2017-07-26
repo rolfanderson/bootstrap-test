@@ -92,7 +92,9 @@ a:hover, a:focus {
 }
 
 #sidebar {
+  /*visibility: hidden;*/
   position: fixed;
+  left: -265px;
   display: block;
   padding-top: 0px;
   width: 250px;
@@ -101,6 +103,36 @@ a:hover, a:focus {
   float: left;
   box-shadow: 10px 0 10px rgba(0,0,0,0.5);
   z-index: 5;
+}
+
+#sidebar.show {
+    /*visibility: visible;*/
+
+    transform: translate(265px,0);
+    -webkit-transform: translate(265px,0);
+    -o-transform: translate(265px,0);
+    -moz-transform: translate(265px,0);
+
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#sidebar.close {
+    transform: translate(-265px,0);
+    -webkit-transform: translate(-265px,0);
+    -o-transform: translate(-265px,0);
+    -moz-transform: translate(-265px,0);
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#sidebar-backdrop {
+  cursor: pointer;
 }
 
 #toc {
@@ -157,14 +189,15 @@ a:hover, a:focus {
 .navbar-inverse {
     background-color: #465c8b;
     border: none;
-    box-shadow: 0 0px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
     z-index: 2;
+    height: 64px;
 }
 
 #sidebar-toggle-btn {
   position: absolute;
-  left: 16px;
-  top: 8px;
+  left: 20px;
+  top: 16px;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -186,7 +219,7 @@ img.logo {
 
 .logo-text {
   height: 40px;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 
 .navbar-collapse.in {
@@ -205,8 +238,8 @@ img.logo {
 
 /*** Snackbar ***/
 #snackbar {
-    min-width: 100%;
-    margin-left: -50%;
+    width: 300px;
+    margin-left: -150px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -329,4 +362,12 @@ a.popup {
     {
         display: none !important;
     }
+}
+
+#test-div {
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 9;
 }
