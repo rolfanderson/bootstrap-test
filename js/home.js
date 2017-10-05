@@ -16,8 +16,7 @@ $("#sidebar-toggle-btn").click(function() {
 });
 
 function sidebarOpen() {
-    var x = document.getElementById("sidebar")
-    x.className = "show";
+    document.getElementById("sidebar").style.width = "250px";
     document.getElementById("sidebar-backdrop").style.display = "block";
     return false;
 }
@@ -28,9 +27,7 @@ $("#sidebar-backdrop").click(function() {
 });
 
 function sidebarClose() {
-    var x = document.getElementById("sidebar")
-    x.className = "close";
-    //x.className = x.className.replace("show", "");
+    document.getElementById("sidebar").style.width = "0";
     document.getElementById("sidebar-backdrop").style.display = "none";
     return false;
 }

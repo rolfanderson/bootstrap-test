@@ -93,18 +93,18 @@ a:hover, a:focus {
 
 #sidebar {
   position: fixed;
-  left: -265px;
   display: block;
   padding-top: 0px;
-  width: 250px;
+  width: 0px;
   height: 100%;
   max-width: 100%;
   float: left;
   box-shadow: 10px 0 10px rgba(0,0,0,0.5);
   z-index: 5;
+  transition: 0.5s;
 }
 
-#sidebar.show {
+/*#sidebar.show {
     transform: translate(265px,0);
     -webkit-transform: translate(265px,0);
     -o-transform: translate(265px,0);
@@ -126,7 +126,7 @@ a:hover, a:focus {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-}
+}*/
 
 #sidebar-backdrop {
   cursor: pointer;
