@@ -14,32 +14,45 @@ h1, h2, h3, header {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  line-height: 1.8em;
 }
 
-blockquote {
-  border-left: 5px solid #D3D3D3;
+.essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 25px;
 }
 
 .epigraph {
-  padding-left: 10px;
   margin-bottom: 10px;
   border-top: 0px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
 
 .epigraph p, blockquote {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Georgia', serif;
   font-size: 16px;
   line-height: 20px;
+  padding-bottom: 5px;
+}
+
+blockquote {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  border-left: 5px solid #D3D3D3;
+  margin-left: 45px;
+  padding-right: 45px;
 }
 
 .caption p {
+  font-family: "Droid Sans", sans-serif;
   font-size: 14px;
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 img.picture {
@@ -47,7 +60,7 @@ img.picture {
 }
 
 a {
-    color: #000000;
+    color: #428BCA;
     text-decoration: none;
 }
 
@@ -271,7 +284,7 @@ img.logo {
 
 }
 
-.exit-btn {
+.exit-btn, .exit-btn:hover, .exit-btn:active {
   color: #ffffff;
   background-color: #465c8b;
 }
