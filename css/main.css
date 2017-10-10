@@ -11,52 +11,76 @@
 /*** Text ***/
 h1, h2, h3, header {
   font-family: 'Crete Round', serif;
+  color: #111;
+  text-shadow: 0 1px 0 #FFF;
 }
 
 p {
   font-family: 'Georgia', serif;
   font-size: 18px;
-  line-height: 1.8em;
+  line-height: 36px;
+  color: #111;
+  text-shadow: 0 1px 0 #FFF;
+}
+
+.essay-section p {
+  margin-top: 18px;
+}
+
+.essay-section h3 {
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 
 .essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
   padding-left: 45px;
   padding-right: 45px;
-  margin-bottom: 25px;
 }
 
 .epigraph {
-  margin-bottom: 10px;
   border-top: 0px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
 }
 
-.epigraph p, blockquote {
+.epigraph p {
   font-family: 'Georgia', serif;
   font-size: 16px;
   line-height: 20px;
-  padding-bottom: 5px;
+  color: #111;
+  text-shadow: 0 1px 0 #FFF;
 }
 
 blockquote {
   font-family: "Droid Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  color: #111;
+  text-shadow: 0 1px 0 #FFF;
   border-left: 5px solid #D3D3D3;
   margin-left: 45px;
   padding-right: 45px;
 }
 
+img.picture {
+  padding-top: 15px;
+  width: 50%;
+}
+
+.caption {
+  width: 50%;
+  background-color: #333;
+  margin: 0px auto;
+}
+
 .caption p {
   font-family: "Droid Sans", sans-serif;
   font-size: 14px;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-img.picture {
-  padding-top: 15px;
+  line-height: 21px;
+  padding: 10px 10px 10px 10px;
+  text-shadow: none;
+  color: #fff;
+  margin-top: 0px;
 }
 
 a {

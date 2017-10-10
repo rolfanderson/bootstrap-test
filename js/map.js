@@ -28,7 +28,7 @@ var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/w
 map = L.map("map", {
   zoom: 17,
   center: [28.4187304,-81.581206],
-  layers: [Stamen_Watercolor],
+  layers: [OpenStreetMap],
   zoomControl: false,
   scrollWheelZoom: true,
   attributionControl: false
