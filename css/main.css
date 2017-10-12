@@ -131,6 +131,7 @@ a:hover, a:focus {
 #sidebar {
   position: fixed;
   display: block;
+  overflow: auto;
   padding-top: 0px;
   width: 0px;
   height: 100%;
