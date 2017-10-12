@@ -44,7 +44,7 @@ var marker =
 
     L.marker([28.418395, -81.578169], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup' href='https://tinyurl.com/k9dvj5u' target='_blank'>RIP</a>");
     //skyway, 15 February 1999
-    L.marker([28.419296, -81.580979], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup' href='https://tinyurl.com/mycq7sv' target='_blank'>RIP</a>");
+    L.marker([28.419296, -81.580979], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup' data-toggle='modal' data-target='#test'>RIP</a>");
 
     L.marker([28.419192, -81.577707], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
 
