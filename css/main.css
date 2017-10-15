@@ -23,19 +23,22 @@ p {
   text-shadow: 0 1px 0 #FFF;
 }
 
-.essay-section p {
-  margin-top: 18px;
+@media (min-width: 978px) {
+    .essay-section p {
+      margin-top: 18px;
+    }
+
+    .essay-section h3 {
+      margin-top: 36px;
+      margin-bottom: 36px;
+    }
+
+    .essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
 }
 
-.essay-section h3 {
-  margin-top: 36px;
-  margin-bottom: 36px;
-}
-
-.essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
-  padding-left: 45px;
-  padding-right: 45px;
-}
 
 .epigraph {
   border-top: 0px solid lightgrey;
