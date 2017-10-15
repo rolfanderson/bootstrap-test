@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/1.9.33/css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="js/jquery-3.2.1.min.js"></script>
   </head>
@@ -44,10 +45,10 @@
             <div id="table-contents">
               <table class="table table-hover">
               <nav class="list" id="Items">
+                <li class="list-group-item clickable" data-toggle="modal" data-target="#introduction">
+                  <span class="text-nowrap"><i class="mdi mdi-gondola mdi-18px"></i>Introduction</span></li>
                 <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#deardisney">
                   <span class="text-nowrap"><i class="mdi mdi-email-outline mdi-18px"></i>Dear Disney</span></li>
-                <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#introduction">
-                  <span class="text-nowrap"><i class="mdi mdi-gondola mdi-18px"></i>Introduction</span></li>
                 <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#monumentality">
                   <span class="text-nowrap"><i class="mdi mdi-castle mdi-18px"></i>Monumentality</span></li>
                 <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#ulmer">
@@ -62,7 +63,7 @@
                   <span class="text-nowrap"><i class="mdi mdi-snowflake mdi-18px"></i>Memento Mortimer</span></li>
                 <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#punctum">
                   <span class="text-nowrap"><i class="mdi mdi-alert-circle-outline mdi-18px"></i>Punctum Notifications</span></li>
-                <li class="list-group-item clickable random-section sw" data-toggle="modal" data-target="#references">
+                <li class="list-group-item clickable" data-toggle="modal" data-target="#references">
                   <span class="text-nowrap"><i class="mdi mdi-format-quote-close mdi-18px"></i>References</span></li>
               </nav>
               </table>
@@ -1035,6 +1036,7 @@ Minnesota Press, 2005.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/sidebar.js"></script>
     <script src="js/map.js"></script>
   </body>
 </html>
