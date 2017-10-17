@@ -305,6 +305,14 @@ html, body, #container {
   color: #42A5F5;
 }
 
+@media (max-width: 480px){
+    .leaflet-touch .leaflet-bar a, .leaflet-touch .leaflet-bar button {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+    }
+}
+
 a.popup {
   margin: 0;
   position: relative;
