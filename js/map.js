@@ -69,7 +69,7 @@ var marker =
 
 /**** Attribution and Control Buttons ****/
 var attributionControl = L.control({
-  position: "bottomright"
+  position: "topright"
 });
 attributionControl.onAdd = function (map) {
   var div = L.DomUtil.create("div", "leaflet-control-attribution");
@@ -79,11 +79,11 @@ attributionControl.onAdd = function (map) {
 map.addControl(attributionControl);
 
 var zoomControl = L.control.zoom({
-  position: "bottomright"
+  position: "topright"
 }).addTo(map);
 
 L.easyButton({
-  position: 'bottomright',
+  position: 'topright',
   id:'about-button',
   leafletClasses: true,
   states:[{

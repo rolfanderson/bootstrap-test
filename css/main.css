@@ -173,11 +173,10 @@ img.logo {
 
 /*** Snackbar ***/
 #snackbar {
-    width: 324px;
-    margin-left: -162px;
+    width: 310px;
+    margin-left: -155px;
     background-color: #333;
     color: #fff;
-    text-align: center;
     border-radius: 0px;
     padding: 8px;
     position: fixed;
@@ -186,6 +185,24 @@ img.logo {
     bottom: 30px;
     font-size: 17px;
     padding: 12px;
+}
+
+#snackbar .close {
+  color: #42A5F5;
+  opacity: 1.0;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  text-shadow: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.snackbar-text {
+  float: left;
+  width: 70%;
+  text-align: left;
 }
 
 #hide {
@@ -241,6 +258,43 @@ html, body, #container {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.leaflet-top {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control {
+  margin-top: 0px;
+  margin-right: 0px;
+  border: none;
+}
+
+.leaflet-touch .leaflet-bar a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 0px;
+  background-color: #333;
+  color: #fff;
+}
+
+.leaflet-bar.easy-button-container.leaflet-control {
+  margin-top: 0px;
+  margin-right: 0px;
+  border: none;
+}
+
+.leaflet-touch .leaflet-bar button {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-top: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: #333;
+  color: #fff;
 }
 
 a.popup {
