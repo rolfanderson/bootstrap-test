@@ -260,15 +260,10 @@ html, body, #container {
   transform: translate(-50%, -50%);
 }
 
-.leaflet-bottom {
-  position: absolute;
-  top: 85%;
-  transform: translateY(-85%);
-}
-
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
+  margin-bottom: 50px;
   border: none;
 }
 
@@ -298,6 +293,10 @@ html, body, #container {
   background-color: #333;
   color: #fff;
   opacity: 0.9;
+}
+
+.leaflet-touch .leaflet-bar a:hover, .leaflet-touch .leaflet-bar button:hover {
+  color: #42A5F5;
 }
 
 a.popup {
