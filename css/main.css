@@ -260,10 +260,16 @@ html, body, #container {
   transform: translate(-50%, -50%);
 }
 
+.leaflet-bottom {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   border: none;
 }
 
