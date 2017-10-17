@@ -260,10 +260,10 @@ html, body, #container {
   transform: translate(-50%, -50%);
 }
 
-.leaflet-top {
+.leaflet-bottom {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 85%;
+  transform: translateY(-85%);
 }
 
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
@@ -279,11 +279,13 @@ html, body, #container {
   border-radius: 0px;
   background-color: #333;
   color: #fff;
+  opacity: 0.9;
 }
 
 .leaflet-bar.easy-button-container.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
+  margin-bottom: 0px;
   border: none;
 }
 
@@ -291,10 +293,11 @@ html, body, #container {
   height: 50px;
   width: 50px;
   line-height: 50px;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-radius: 0px;
   background-color: #333;
   color: #fff;
+  opacity: 0.9;
 }
 
 a.popup {
