@@ -303,6 +303,7 @@ html, body, #container {
 
 .leaflet-touch .leaflet-bar a:hover, .leaflet-touch .leaflet-bar button:hover {
   color: #42A5F5;
+  opacity: 1.0;
 }
 
 @media (max-width: 480px){
@@ -311,13 +312,24 @@ html, body, #container {
       width: 40px;
       line-height: 40px;
     }
+
+    .leaflet-bottom {
+      position: absolute;
+      bottom: 10%;
+      transform: translateY(10%);
+    }
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background-color: #eeeeee;
+  color: #000;
 }
 
 a.popup {
   margin: 0;
   position: relative;
   left: 30%;
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 
