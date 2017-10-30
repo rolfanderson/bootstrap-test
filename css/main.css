@@ -320,11 +320,6 @@ html, body, #container {
     }
 }
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
-  background-color: #eeeeee;
-  color: #000;
-}
-
 a.popup {
   margin: 0;
   position: relative;
