@@ -8,12 +8,18 @@ var OpenStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.
 });
 
 var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-	maxZoom: 18,
+  maxZoom: 18,
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
 
 map = L.map("map", {
   zoom: 17,
+  maxBounds: [
+        //south west
+        [28.321004534362544, -81.63185119628905],
+        //north east
+        [28.441223256828355, -81.49246215820312]
+        ],
   center: [28.4187304,-81.581206],
   layers: [OpenStreetMap],
   zoomControl: false,
@@ -26,107 +32,288 @@ var ripIcon = L.icon({
               iconSize: [25, 25],
 });
 
-
-/*var marker =
-
-    L.marker([28.418395, -81.578169], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup' href='https://tinyurl.com/k9dvj5u' target='_blank'>RIP</a>");
-    //skyway, 15 February 1999
-    L.marker([28.419296, -81.580979], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup' data-toggle='modal' data-target='#test'>RIP</a>");
-
-    L.marker([28.419192, -81.577707], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.418824, -81.577455], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.418786, -81.577202], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.417909, -81.584142], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.417958, -81.584346], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.418962, -81.577671], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.420159, -81.581194], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.420490, -81.582037], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.419169, -81.585052], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");
-
-    L.marker([28.417928, -81.583496], {icon: ripIcon}).addTo(map).bindPopup("<a class='popup'>RIP</a>");*/
-
 var marker =
 
-L.marker([28.418395, -81.578169], {
-  id: "marker-1",
+// Magic Kingdom
+L.marker([28.4184, -81.57835], {
+  title: "marker-1",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.419296, -81.580979], {
-  id: "marker-2",
+L.marker([28.419311, -81.58104], {
+  title: "marker-2",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 L.marker([28.419192, -81.577707], {
-  id: "marker-3",
+  title: "marker-3",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 L.marker([28.418824, -81.577455], {
-  id: "marker-4",
+  title: "marker-4",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 L.marker([28.418786, -81.577202], {
-  id: "marker-5",
+  title: "marker-5",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.417909, -81.584142], {
-  id: "marker-6",
+L.marker([28.41814534415844, -81.58425807952881], {
+  title: "marker-6",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.417958, -81.584346], {
-  id: "marker-7",
+L.marker([28.4182, -81.5844], {
+  title: "marker-7",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 L.marker([28.418962, -81.577671], {
-  id: "marker-8",
+  title: "marker-8",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.420159, -81.581194], {
-  id: "marker-9",
+L.marker([28.4203, -81.5812], {
+  title: "marker-9",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 L.marker([28.420490, -81.582037], {
-  id: "marker-10",
+  title: "marker-10",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.419169, -81.585052], {
-  id: "marker-11",
+L.marker([28.419216323469705, -81.58459067344666], {
+  title: "marker-11",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.417928, -81.583496], {
-  id: "marker-12",
+L.marker([28.4181, -81.5834], {
+  title: "marker-12",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.418065138223366, -81.58602833747864], {
-  id: "marker-13",
+L.marker([28.418079292216312, -81.58594787120819], {
+  title: "marker-13",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.420008935544175,-81.58462285995483], {
-  id: "marker-14",
+L.marker([28.420197651830208, -81.58431708812714], {
+  title: "marker-14",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+// Epcot
+L.marker([28.373867151881498,-81.54710412025452], {
+  title: "marker-15",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([28.373978071022137,-81.54701828956604], {
+  title: "marker-16",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([28.373845912032813,-81.54692977666855], {
+  title: "marker-17",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([28.37377039253644,-81.547010242939], {
+  title: "marker-18",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+/*L.marker([], {
+  id: "marker-19",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-20",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-21",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-22",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-23",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-24",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-25",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-26",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-27",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-28",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-29",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-30",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-31",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-32",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-33",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-34",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-35",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-36",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-37",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-38",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-39",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-40",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-41",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-42",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-43",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-44",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-45",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-46",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-47",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-48",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-49",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-50",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-51",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-52",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-53",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-54",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+
+L.marker([], {
+  id: "marker-55",
+  icon: ripIcon
+}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);*/
+
 
 function clickZoom(e) {
-	map.setView(e.target.getLatLng(),17);
+	map.setView(e.target.getLatLng(),19);
 }
 
 /**** Attribution and Control Buttons ****/
@@ -158,11 +345,13 @@ L.easyButton({
 
 var jsonStyle = {
     "color": "#333",
-    "weight": 2,
+    "weight": 0,
     "opacity": 1.0,
-    "fill": false
+    "fill": true,
+    "fillColor": "#333",
+    "fillOpacity": 0.7
 };
 
-L.geoJSON(boundary, {
+L.geoJSON(florida, {
   style: jsonStyle
 }).addTo(map);
