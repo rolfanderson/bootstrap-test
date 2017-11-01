@@ -14,11 +14,11 @@ var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-m
 
 var magicKingdom = [28.4187304,-81.581206];
 
-var epcot = [28.373711392892478,-81.5493893623352];
+var epcot = [28.376543338787936,-81.5493893623352];
 
 var hollywoodStudios = [28.3574015,-81.5606943555329];
 
-var animalKingdom = [28.36076735,-81.5914841136809];
+var animalKingdom = [28.357567857801694,-81.5905237197876];
 
 map = L.map("map", {
   zoom: 17,
@@ -114,112 +114,129 @@ L.marker([28.420197651830208, -81.58431708812714], {
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
 // Epcot
-L.marker([28.373867151881498,-81.54710412025452], {
+L.marker([28.374093710002718,-81.54736161231995], {
   title: "marker-15",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.373978071022137,-81.54701828956604], {
+L.marker([28.373966271119055,-81.54736161231995], {
   title: "marker-16",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.373845912032813,-81.54692977666855], {
+L.marker([28.37384355204938,-81.54732406139374], {
   title: "marker-17",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([28.37377039253644,-81.547010242939], {
+L.marker([28.373782192461302,-81.54722750186919], {
   title: "marker-18",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-/*L.marker([], {
-  id: "marker-19",
+L.marker([28.373069474645536,-81.55112206935883], {
+  title: "marker-19",
+  //Suicide discussed in Inside the Mouse
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-20",
+L.marker([28.37393795134636, -81.5513151884079], {
+  title: "marker-20",
+  //Soarin'
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-21",
+L.marker([28.374551544729144,-81.54723823070526], {
+  title: "marker-21",
+  //Body Wars, part of Wonders of Life no longer extant
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-22",
+L.marker([28.37858229301675,-81.55077338218688], {
+  title: "marker-22",
+  //parking lot
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-23",
+L.marker([28.380224755418006,-81.54563426971436], {
+  title: "marker-23",
+  //parking lot
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-24",
+L.marker([28.378176393216357,-81.54649257659912], {
+  title: "marker-24",
+  //parking lot
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-25",
+L.marker([28.38050793601977,-81.55104160308838], {
+  title: "marker-25",
+  //parking lot
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
-  id: "marker-26",
+L.marker([28.380592890052874,-81.54806971549988], {
+  title: "marker-26",
+  //parking lot
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.355627636102188,-81.55909359455107], {
   id: "marker-27",
+  //star tours
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.356699247118353,-81.5587717294693], {
   id: "marker-28",
+  //indiana jones
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.35818154584766,-81.55896484851837], {
   id: "marker-29",
+  //unknown employee/location?
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.35938530824809,-81.56059563159943], {
   id: "marker-30",
+  //rocknroller coaster
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.356477372597688,-81.56101942062378], {
   id: "marker-31",
+  //toy story
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.35651041776846,-81.58783614635466], {
   id: "marker-32",
+  //whirl
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.356453768897985,-81.58795952796936], {
   id: "marker-33",
+  //whirl
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.355599311435203,-81.58849060535431], {
   id: "marker-34",
+  //dinosaur
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+L.marker([28.358172104519987,-81.58721923828125], {
   id: "marker-35",
+  //everest
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
 
-L.marker([], {
+/*L.marker([], {
   id: "marker-36",
   icon: ripIcon
 }).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
