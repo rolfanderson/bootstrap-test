@@ -12,6 +12,14 @@ var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-m
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 });
 
+var magicKingdom = [28.4187304,-81.581206];
+
+var epcot = [28.373711392892478,-81.5493893623352];
+
+var hollywoodStudios = [28.3574015,-81.5606943555329];
+
+var animalKingdom = [28.36076735,-81.5914841136809];
+
 map = L.map("map", {
   zoom: 17,
   maxBounds: [
@@ -20,7 +28,7 @@ map = L.map("map", {
         //north east
         [28.441223256828355, -81.49246215820312]
         ],
-  center: [28.4187304,-81.581206],
+  center: magicKingdom,
   layers: [OpenStreetMap],
   zoomControl: false,
   scrollWheelZoom: true,
@@ -354,4 +362,52 @@ var jsonStyle = {
 
 L.geoJSON(florida, {
   style: jsonStyle
+}).addTo(map);
+
+L.easyButton({
+  position: 'bottomleft',
+  id:'deathtour-tab',
+  leafletClasses: true,
+  states:[{
+    onClick: function(button, map){
+      map.setView(animalKingdom, 16);
+    },
+    icon: '<i class="mdi mdi-evernote mdi-18px" id="info-btn"></i>'
+  }]
+}).addTo(map);
+
+L.easyButton({
+  position: 'bottomleft',
+  id:'pizzaparlor-tab',
+  leafletClasses: true,
+  states:[{
+    onClick: function(button, map){
+      map.setView(hollywoodStudios, 16);
+    },
+    icon: '<i class="mdi mdi-movie mdi-18px" id="info-btn"></i>'
+  }]
+}).addTo(map);
+
+L.easyButton({
+  position: 'bottomleft',
+  id:'postcard-tab',
+  leafletClasses: true,
+  states:[{
+    onClick: function(button, map){
+      map.setView(epcot, 16);
+    },
+    icon: '<i class="mdi mdi-web mdi-18px" id="info-btn"></i>'
+  }]
+}).addTo(map);
+
+L.easyButton({
+  position: 'bottomleft',
+  id:'fourcorners-tab',
+  leafletClasses: true,
+  states:[{
+    onClick: function(button, map){
+      map.setView(magicKingdom, 16);
+    },
+    icon: '<i class="mdi mdi-auto-fix mdi-18px" id="info-btn"></i>'
+  }]
 }).addTo(map);

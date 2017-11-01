@@ -44,6 +44,24 @@ p {
     }
 }
 
+.letter-text p {
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.letterhead-right p {
+    text-align: right;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.letterhead-left p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
 
 .epigraph {
   border-top: 0px solid lightgrey;
@@ -153,8 +171,15 @@ img.logo {
 }
 
 .logo-text {
-  height: 40px;
+  height: 50px;
   margin-top: 12px;
+}
+
+@media (max-width: 480px){
+  .logo-text {
+    height: 40px;
+    margin-top: 15px;
+  }
 }
 
 .navbar-collapse.in {
@@ -269,6 +294,7 @@ html, body, #container {
 .leaflet-control-zoom.leaflet-bar.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
+  margin-left: 0px;
   margin-bottom: 0px;
   border: none;
 }
@@ -286,6 +312,7 @@ html, body, #container {
 .leaflet-bar.easy-button-container.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
+  margin-left: 0px;
   margin-bottom: 0px;
   border: none;
 }
