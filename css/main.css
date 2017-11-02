@@ -170,15 +170,25 @@ img.logo {
   cursor: pointer;
 }
 
-.logo-text {
-  height: 50px;
-  margin-top: 12px;
+.logo-text-1 {
+  height: 55px;
+  margin-top: 7px;
+}
+
+.logo-text-2 {
+  display: none;
 }
 
 @media (max-width: 480px){
-  .logo-text {
-    height: 40px;
-    margin-top: 15px;
+  .logo-text-1 {
+    display: none;
+  }
+
+  .logo-text-2 {
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
 
@@ -350,9 +360,16 @@ html, body, #container {
 a.popup {
   margin: 0;
   position: relative;
-  left: 30%;
   color: #000;
   font-weight: bold;
+}
+
+.leaflet-popup-content-wrapper {
+  margin-bottom: 5px;
+}
+
+.leaflet-popup-tip-container {
+  display: none;
 }
 
 @media (max-width: 992px) {
