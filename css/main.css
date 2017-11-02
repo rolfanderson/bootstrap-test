@@ -23,27 +23,6 @@ p {
   text-shadow: 0 1px 0 #FFF;
 }
 
-@media (min-width: 978px) {
-    .essay-section p {
-      margin-top: 18px;
-    }
-
-    .essay-section h3 {
-      margin-top: 36px;
-      margin-bottom: 36px;
-    }
-
-    .essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-
-    blockquote {
-      margin-left: 45px;
-      padding-right: 45px;
-    }
-}
-
 .letter-text p {
   font-family: 'Times New Roman', serif;
   font-size: 16px;
@@ -106,12 +85,6 @@ img.picture {
   text-shadow: none;
   color: #fff;
   margin-top: 0px;
-}
-
-@media (max-width: 978px){
-    img.picture, .caption {
-      width: 100%
-    }
 }
 
 a {
@@ -177,19 +150,6 @@ img.logo {
 
 .logo-text-2 {
   display: none;
-}
-
-@media (max-width: 480px){
-  .logo-text-1 {
-    display: none;
-  }
-
-  .logo-text-2 {
-    display: block;
-    height: 45px;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
 }
 
 .navbar-collapse.in {
@@ -287,21 +247,13 @@ html, body, #container {
   z-index: 1;
 }
 
-#info-btn {
-  margin: 0;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .leaflet-bottom {
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
 }
 
-.leaflet-control-zoom.leaflet-bar.leaflet-control {
+.leaflet-control-zoom.leaflet-bar.leaflet-control, .leaflet-bar.easy-button-container.leaflet-control {
   margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;
@@ -309,25 +261,25 @@ html, body, #container {
   border: none;
 }
 
-.leaflet-touch .leaflet-bar a {
+.leaflet-bar {
+  box-shadow: none;
+}
+
+.leaflet-bar a:first-child, .leaflet-bar a:last-child {
+  border-radius: 0px;
+}
+
+.leaflet-bar a {
+  font-size: 24px;
+}
+
+.leaflet-bar a:hover {
   height: 50px;
   width: 50px;
   line-height: 50px;
-  border-radius: 0px;
-  background-color: #333;
-  color: #fff;
-  opacity: 0.9;
 }
 
-.leaflet-bar.easy-button-container.leaflet-control {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  border: none;
-}
-
-.leaflet-touch .leaflet-bar button {
+.leaflet-touch .leaflet-bar a, .leaflet-bar a, #about-button, #magic-tab, #epcot-tab, #hollywood-tab, #animal-tab {
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -336,25 +288,13 @@ html, body, #container {
   background-color: #333;
   color: #fff;
   opacity: 0.9;
+  box-shadow: none;
 }
 
-.leaflet-touch .leaflet-bar a:hover, .leaflet-touch .leaflet-bar button:hover {
+.leaflet-touch .leaflet-bar a:hover, .leaflet-bar a:hover, #about-button:hover, #magic-tab:hover, #epcot-tab:hover, #hollywood-tab:hover, #animal-tab:hover {
   color: #42A5F5;
+  background-color: #333;
   opacity: 1.0;
-}
-
-@media (max-width: 480px){
-    .leaflet-touch .leaflet-bar a, .leaflet-touch .leaflet-bar button {
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-    }
-
-    .leaflet-bottom {
-      position: absolute;
-      bottom: 10%;
-      transform: translateY(10%);
-    }
 }
 
 a.popup {
@@ -372,25 +312,66 @@ a.popup {
   display: none;
 }
 
-@media (max-width: 992px) {
-  .navbar .navbar-brand {
-    font-size: 18px;
-  }
+#magic-tab i {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 54%;
+  transform: translate(-50%, -50%);
 }
-@media (max-width: 767px){
-  #sidebar {
+
+#animal-tab {
+  margin-bottom: 50px;
+  font-size: 18px;
+  border-bottom: none;
+}
+
+#about-button {
+  margin-bottom: 50px;
+  border-bottom: none;
+}
+
+/*** Media Queries ***/
+@media (max-width: 480px){
+  .logo-text-1 {
     display: none;
   }
-  .url-break {
-    word-break: break-all;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-      hyphens: auto;
-  }
-  .dropdown-menu a i{
-    color: #FFFFFF;
+
+  .logo-text-2 {
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
+
+@media (min-width: 978px) {
+    .essay-section p {
+      margin-top: 18px;
+    }
+
+    .essay-section h3 {
+      margin-top: 36px;
+      margin-bottom: 36px;
+    }
+
+    .essay-section p, .essay-section h1, .essay-section h2, .essay-section h3 {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+
+    blockquote {
+      margin-left: 45px;
+      padding-right: 45px;
+    }
+}
+
+@media (max-width: 978px){
+    img.picture, .caption {
+      width: 100%
+    }
+}
+
 /* Print Handling */
 @media print {
   .navbar {
@@ -420,10 +401,35 @@ a.popup {
     }
 }
 
-#test-div {
-  visibility: hidden;
-  height: 100%;
-  width: 100%;
-  background-color: #f1f1f1;
-  z-index: 9;
+@media (max-width: 992px) {
+  .navbar .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px){
+  #sidebar {
+    display: none;
+  }
+  .url-break {
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+      hyphens: auto;
+  }
+  .dropdown-menu a i{
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 480px){
+    .leaflet-touch .leaflet-bar a, .leaflet-bar a, #about-button, #magic-tab, #epcot-tab, #hollywood-tab, #animal-tab {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+    }
+
+    #animal-tab, #about-button {
+      margin-bottom: 40px;
+    }
 }

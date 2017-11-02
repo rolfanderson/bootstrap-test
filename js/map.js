@@ -7,11 +7,6 @@ var OpenStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.
   attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 
-var OpenStreetMap_BlackAndWhite = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-  maxZoom: 18,
-	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-});
-
 var magicKingdom = [28.4187304,-81.581206];
 
 var epcot = [28.376543338787936,-81.5493893623352];
@@ -252,39 +247,39 @@ L.marker([28.36594675346225,-81.53042078018188], {
   title: "marker-38",
   //wave pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 26, 2012</a>").on('click', clickZoom);
 
 L.marker([28.41149276310289,-81.5646082162857], {
   title: "marker-39",
   //river country
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Chase Brubaker<br>April 1, 2010</a>").on('click', clickZoom);
 
 L.marker([28.411256848300972,-81.56455993652344], {
   title: "marker-40",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 22, 1980</a>").on('click', clickZoom);
 
 L.marker([28.41133234109476,-81.5648227930069], {
   title: "marker-41",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>April 16, 1982</a>").on('click', clickZoom);
 
 L.marker([28.410917130063112,-81.56458139419556], {
   title: "marker-42",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 9, 1982</a>").on('click', clickZoom);
 
 L.marker([28.4110775527001,-81.56475841999054], {
   title: "marker-43",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>July 10, 1989</a>").on('click', clickZoom);
 
 L.marker([28.405594735421133,-81.55718386173248], {
   title: "marker-44",
   //fort wilderness pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>May 23, 1987</a>").on('click', clickZoom);
 
 L.marker([28.410435860694257,-81.58691346645355], {
   title: "marker-45",
@@ -301,48 +296,48 @@ L.marker([28.411606002021156,-81.58354997634888], {
 L.marker([28.414875723565174,-81.57429099082947], {
   title: "marker-47",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>March 22, 2016</a>").on('click', clickZoom);
 
 L.marker([28.387540011741013,-81.53945446014404], {
   title: "marker-48",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>December 26, 2010</a>").on('click', clickZoom);
 
 L.marker([28.35046770123537,-81.54387474060059], {
   title: "marker-49",
   //pop century pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>March 10, 2013</a>").on('click', clickZoom);
 
 L.marker([28.350278860802213,-81.54784440994263], {
   title: "marker-50",
   //art of animation pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>July 14, 2015</a>").on('click', clickZoom);
 
 L.marker([28.337776877200927,-81.55679225921631], {
   title: "marker-51",
   //espn
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Steven Snyder<br>July 9, 2010</a>").on('click', clickZoom);
 
 L.marker([28.395675871708576,-81.57624363899231], {
   title: "marker-52",
   //speedway
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Gary Terry<br>April 12, 2015</a>").on('click', clickZoom);
 
 L.marker([28.379049547840363,-81.50643110275269], {
   title: "marker-53",
   //doubletree
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>RIP<br>June 13, 2010</a>").on('click', clickZoom);
 
 L.marker([28.405533394207854,-81.58537924289702], {
   title: "marker-54",
   //coral island coffee
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Nicole Cotto<br>April 6, 1982</a>").on('click', clickZoom);
 
 L.marker([28.41577216638465,-81.57565355300903], {
   title: "marker-55",
@@ -376,15 +371,69 @@ var zoomControl = L.control.zoom({
   position: "bottomright"
 }).addTo(map);
 
+
+var animalTab = L.easyButton({
+  position: 'bottomright',
+  id:'animal-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Animal Kingdom',
+    onClick: function(button, map){
+      map.setView(animalKingdom, 16);
+    },
+    icon: '<i class="glyphicon glyphicon-tree-deciduous"></i>'
+  }]
+}).addTo(map);
+
+var hollywoodTab = L.easyButton({
+  position: 'bottomright',
+  id:'hollywood-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Hollywood Studios',
+    onClick: function(button, map){
+      map.setView(hollywoodStudios, 16);
+    },
+    icon: '<i class="mdi mdi-movie mdi-18px"></i>'
+  }]
+}).addTo(map);
+
+var epcotTab = L.easyButton({
+  position: 'bottomright',
+  id:'epcot-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Epcot',
+    onClick: function(button, map){
+      map.setView(epcot, 16);
+    },
+    icon: '<i class="mdi mdi-web mdi-18px"></i>'
+  }]
+}).addTo(map);
+
+var magicTab = L.easyButton({
+  position: 'bottomright',
+  id:'magic-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Magic Kingdom',
+    onClick: function(button, map){
+      map.setView(magicKingdom, 16);
+    },
+    icon: '<i class="mdi mdi-auto-fix mdi-18px"></i>'
+  }]
+}).addTo(map);
+
 L.easyButton({
   position: 'bottomright',
   id:'about-button',
   leafletClasses: true,
   states:[{
+    title: 'Instructions',
     onClick: function(button, map){
       $('#about').modal('show');
     },
-    icon: '<i class="mdi mdi-help mdi-18px" id="info-btn"></i>'
+    icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
 }).addTo(map);
 
@@ -399,52 +448,4 @@ var jsonStyle = {
 
 L.geoJSON(florida, {
   style: jsonStyle
-}).addTo(map);
-
-L.easyButton({
-  position: 'bottomleft',
-  id:'deathtour-tab',
-  leafletClasses: true,
-  states:[{
-    onClick: function(button, map){
-      map.setView(animalKingdom, 16);
-    },
-    icon: '<i class="mdi mdi-evernote mdi-18px" id="info-btn"></i>'
-  }]
-}).addTo(map);
-
-L.easyButton({
-  position: 'bottomleft',
-  id:'pizzaparlor-tab',
-  leafletClasses: true,
-  states:[{
-    onClick: function(button, map){
-      map.setView(hollywoodStudios, 16);
-    },
-    icon: '<i class="mdi mdi-movie mdi-18px" id="info-btn"></i>'
-  }]
-}).addTo(map);
-
-L.easyButton({
-  position: 'bottomleft',
-  id:'postcard-tab',
-  leafletClasses: true,
-  states:[{
-    onClick: function(button, map){
-      map.setView(epcot, 16);
-    },
-    icon: '<i class="mdi mdi-web mdi-18px" id="info-btn"></i>'
-  }]
-}).addTo(map);
-
-L.easyButton({
-  position: 'bottomleft',
-  id:'fourcorners-tab',
-  leafletClasses: true,
-  states:[{
-    onClick: function(button, map){
-      map.setView(magicKingdom, 16);
-    },
-    icon: '<i class="mdi mdi-auto-fix mdi-18px" id="info-btn"></i>'
-  }]
 }).addTo(map);
