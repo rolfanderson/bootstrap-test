@@ -4,7 +4,7 @@ var map;
 var OpenStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   minZoom: 15,
-  attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: 'A MEmorial by Kenny Anderson and Jason Crider',
 });
 
 var magicKingdom = [28.4187304,-81.581206];
@@ -27,8 +27,16 @@ map = L.map("map", {
   layers: [OpenStreetMap],
   zoomControl: false,
   scrollWheelZoom: true,
-  attributionControl: false
+  attributionControl: true,
+  setPrefix: false
 });
+
+map.attributionControl.setPrefix(false);
+
+/*var ourNames = L.control.attribution({
+  position: 'bottomleft',
+  prefix: 'Death Tour'
+}).addTo(map);*/
 
 var ripIcon = L.icon({
               iconUrl: 'img/marker.png',
@@ -66,7 +74,7 @@ L.marker([28.418786, -81.577202], {
 L.marker([28.41814534415844, -81.58425807952881], {
   title: "marker-6",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>February 2005</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>February 2005</a>").on('click', clickZoom);
 
 L.marker([28.4182, -81.5844], {
   title: "marker-7",
@@ -76,22 +84,22 @@ L.marker([28.4182, -81.5844], {
 L.marker([28.418962, -81.577671], {
   title: "marker-8",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>December 7, 2006</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>December 7, 2006</a>").on('click', clickZoom);
 
 L.marker([28.4203, -81.5812], {
   title: "marker-9",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>December 12, 2010</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>December 12, 2010</a>").on('click', clickZoom);
 
 L.marker([28.420490, -81.582037], {
   title: "marker-10",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>December 25, 2014</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>December 25, 2014</a>").on('click', clickZoom);
 
 L.marker([28.419216323469705, -81.58459067344666], {
   title: "marker-11",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>November 5, 2000</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>November 5, 2000</a>").on('click', clickZoom);
 
 L.marker([28.4181, -81.5834], {
   title: "marker-12",
@@ -106,7 +114,7 @@ L.marker([28.418079292216312, -81.58594787120819], {
 L.marker([28.420197651830208, -81.58431708812714], {
   title: "marker-14",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>February 2017</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>February 2017</a>").on('click', clickZoom);
 
 // Epcot
 L.marker([28.374093710002718,-81.54736161231995], {
@@ -122,12 +130,12 @@ L.marker([28.373966271119055,-81.54736161231995], {
 L.marker([28.37384355204938,-81.54732406139374], {
   title: "marker-17",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>June 13, 2005</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>June 13, 2005</a>").on('click', clickZoom);
 
 L.marker([28.373782192461302,-81.54722750186919], {
   title: "marker-18",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>April 11, 2006</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>April 11, 2006</a>").on('click', clickZoom);
 
 L.marker([28.373069474645536,-81.55112206935883], {
   title: "marker-19",
@@ -145,7 +153,7 @@ L.marker([28.374551544729144,-81.54723823070526], {
   title: "marker-21",
   //Body Wars, part of Wonders of Life no longer extant
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>May 16, 1995</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>May 16, 1995</a>").on('click', clickZoom);
 
 L.marker([28.37858229301675,-81.55077338218688], {
   title: "marker-22",
@@ -169,13 +177,13 @@ L.marker([28.38050793601977,-81.55104160308838], {
   title: "marker-25",
   //parking lot
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>January 14, 1986</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>January 14, 1986</a>").on('click', clickZoom);
 
 L.marker([28.380592890052874,-81.54806971549988], {
   title: "marker-26",
   //parking lot
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>January 14, 1986</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>January 14, 1986</a>").on('click', clickZoom);
 
 L.marker([28.355627636102188,-81.55909359455107], {
   title: "marker-27",
@@ -193,19 +201,19 @@ L.marker([28.35818154584766,-81.55896484851837], {
   title: "marker-29",
   //unknown employee/location?
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>February 8, 1990</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>February 8, 1990</a>").on('click', clickZoom);
 
 L.marker([28.35938530824809,-81.56059563159943], {
   title: "marker-30",
   //rocknroller coaster
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>June 29, 2006</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>June 29, 2006</a>").on('click', clickZoom);
 
 L.marker([28.356477372597688,-81.56101942062378], {
   title: "marker-31",
   //toy story
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>October 2014</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>October 2014</a>").on('click', clickZoom);
 
 L.marker([28.35651041776846,-81.58783614635466], {
   title: "marker-32",
@@ -223,7 +231,7 @@ L.marker([28.355599311435203,-81.58849060535431], {
   title: "marker-34",
   //dinosaur
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>April 30, 2005</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>April 30, 2005</a>").on('click', clickZoom);
 
 L.marker([28.358172104519987,-81.58721923828125], {
   title: "marker-35",
@@ -247,7 +255,7 @@ L.marker([28.36594675346225,-81.53042078018188], {
   title: "marker-38",
   //wave pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 26, 2012</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>August 26, 2012</a>").on('click', clickZoom);
 
 L.marker([28.41149276310289,-81.5646082162857], {
   title: "marker-39",
@@ -258,28 +266,28 @@ L.marker([28.41149276310289,-81.5646082162857], {
 L.marker([28.411256848300972,-81.56455993652344], {
   title: "marker-40",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 22, 1980</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>August 22, 1980</a>").on('click', clickZoom);
 
 L.marker([28.41133234109476,-81.5648227930069], {
   title: "marker-41",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>April 16, 1982</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>April 16, 1982</a>").on('click', clickZoom);
 
 L.marker([28.410917130063112,-81.56458139419556], {
   title: "marker-42",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>August 9, 1982</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>August 9, 1982</a>").on('click', clickZoom);
 
 L.marker([28.4110775527001,-81.56475841999054], {
   title: "marker-43",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>July 10, 1989</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>July 10, 1989</a>").on('click', clickZoom);
 
 L.marker([28.405594735421133,-81.55718386173248], {
   title: "marker-44",
   //fort wilderness pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>May 23, 1987</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>May 23, 1987</a>").on('click', clickZoom);
 
 L.marker([28.410435860694257,-81.58691346645355], {
   title: "marker-45",
@@ -296,24 +304,24 @@ L.marker([28.411606002021156,-81.58354997634888], {
 L.marker([28.414875723565174,-81.57429099082947], {
   title: "marker-47",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>March 22, 2016</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>March 22, 2016</a>").on('click', clickZoom);
 
 L.marker([28.387540011741013,-81.53945446014404], {
   title: "marker-48",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>December 26, 2010</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>December 26, 2010</a>").on('click', clickZoom);
 
 L.marker([28.35046770123537,-81.54387474060059], {
   title: "marker-49",
   //pop century pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>March 10, 2013</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>March 10, 2013</a>").on('click', clickZoom);
 
 L.marker([28.350278860802213,-81.54784440994263], {
   title: "marker-50",
   //art of animation pool
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>July 14, 2015</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>July 14, 2015</a>").on('click', clickZoom);
 
 L.marker([28.337776877200927,-81.55679225921631], {
   title: "marker-51",
@@ -331,7 +339,7 @@ L.marker([28.379049547840363,-81.50643110275269], {
   title: "marker-53",
   //doubletree
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>RIP<br>June 13, 2010</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Unknown<br>June 13, 2010</a>").on('click', clickZoom);
 
 L.marker([28.405533394207854,-81.58537924289702], {
   title: "marker-54",
@@ -357,62 +365,22 @@ function clickZoom(e) {
 }
 
 /**** Attribution and Control Buttons ****/
-var attributionControl = L.control({
-  position: "bottomright"
-});
-attributionControl.onAdd = function (map) {
-  var div = L.DomUtil.create("div", "leaflet-control-attribution");
-  div.innerHTML = "<span class='hidden-xs'><a href='#' onclick='$(\"#about\").modal(\"show\"); return false;'></a></span>";
-  return div;
-};
-map.addControl(attributionControl);
 
-var zoomControl = L.control.zoom({
-  position: "bottomright"
-}).addTo(map);
-
-
-var animalTab = L.easyButton({
-  position: 'bottomright',
-  id:'animal-tab',
+L.easyButton({
+  position: 'topright',
+  id:'about-button',
   leafletClasses: true,
   states:[{
-    title: 'Animal Kingdom',
+    title: 'Instructions',
     onClick: function(button, map){
-      map.setView(animalKingdom, 16);
+      $('#about').modal('show');
     },
-    icon: '<i class="glyphicon glyphicon-tree-deciduous"></i>'
-  }]
-}).addTo(map);
-
-var hollywoodTab = L.easyButton({
-  position: 'bottomright',
-  id:'hollywood-tab',
-  leafletClasses: true,
-  states:[{
-    title: 'Hollywood Studios',
-    onClick: function(button, map){
-      map.setView(hollywoodStudios, 16);
-    },
-    icon: '<i class="mdi mdi-movie mdi-18px"></i>'
-  }]
-}).addTo(map);
-
-var epcotTab = L.easyButton({
-  position: 'bottomright',
-  id:'epcot-tab',
-  leafletClasses: true,
-  states:[{
-    title: 'Epcot',
-    onClick: function(button, map){
-      map.setView(epcot, 16);
-    },
-    icon: '<i class="mdi mdi-web mdi-18px"></i>'
+    icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
 }).addTo(map);
 
 var magicTab = L.easyButton({
-  position: 'bottomright',
+  position: 'topright',
   id:'magic-tab',
   leafletClasses: true,
   states:[{
@@ -424,17 +392,47 @@ var magicTab = L.easyButton({
   }]
 }).addTo(map);
 
-L.easyButton({
-  position: 'bottomright',
-  id:'about-button',
+var epcotTab = L.easyButton({
+  position: 'topright',
+  id:'epcot-tab',
   leafletClasses: true,
   states:[{
-    title: 'Instructions',
+    title: 'Epcot',
     onClick: function(button, map){
-      $('#about').modal('show');
+      map.setView(epcot, 16);
     },
-    icon: '<i class="mdi mdi-help mdi-18px"></i>'
+    icon: '<i class="mdi mdi-web mdi-18px"></i>'
   }]
+}).addTo(map);
+
+var hollywoodTab = L.easyButton({
+  position: 'topright',
+  id:'hollywood-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Hollywood Studios',
+    onClick: function(button, map){
+      map.setView(hollywoodStudios, 16);
+    },
+    icon: '<i class="mdi mdi-movie mdi-18px"></i>'
+  }]
+}).addTo(map);
+
+var animalTab = L.easyButton({
+  position: 'topright',
+  id:'animal-tab',
+  leafletClasses: true,
+  states:[{
+    title: 'Animal Kingdom',
+    onClick: function(button, map){
+      map.setView(animalKingdom, 16);
+    },
+    icon: '<i class="mdi mdi-paw mdi-18px"></i>'
+  }]
+}).addTo(map);
+
+var zoomControl = L.control.zoom({
+  position: "topright"
 }).addTo(map);
 
 var jsonStyle = {

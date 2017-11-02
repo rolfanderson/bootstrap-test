@@ -247,7 +247,7 @@ html, body, #container {
   z-index: 1;
 }
 
-.leaflet-bottom {
+.leaflet-top {
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
@@ -322,7 +322,6 @@ a.popup {
 
 #animal-tab {
   margin-bottom: 50px;
-  font-size: 18px;
   border-bottom: none;
 }
 
