@@ -7,6 +7,12 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 @import url("https://fonts.googleapis.com/css?family=Crete+Round");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@font-face {
+    font-family: 'Waltograph Regular';
+    src: url('fonts/waltograph.regular-webfont.woff2') format('woff2'),
+         url('fonts/waltograph.regular-webfont.woff') format('woff'),
+         url('fonts/waltograph.regular-webfont.tff') format('truetype');
+}
 
 /*** Text ***/
 h1, h2, h3, header {
@@ -24,8 +30,8 @@ p {
 }
 
 .letter-wrapper {
+  border: 1px solid #ccc;
   box-shadow:
-    0 0 5px #333,
     0 19px 38px rgba(0,0,0,0.30),
     0 15px 12px rgba(0,0,0,0.22);
   margin: 30px;
@@ -69,6 +75,13 @@ p {
   line-height: 20px;
   color: #111;
   text-shadow: 0 1px 0 #FFF;
+}
+
+.did-you-know {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+
 }
 
 blockquote {
@@ -356,6 +369,10 @@ a.popup {
     height: 45px;
     margin: 0 auto;
     margin-top: 10px;
+  }
+
+  .leaflet-control-zoom.leaflet-bar.leaflet-control {
+    display: none;
   }
 }
 
