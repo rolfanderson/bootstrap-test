@@ -54,6 +54,7 @@ p {
     text-align: right;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 15px;
 }
 
 .letterhead-left p {
@@ -373,6 +374,14 @@ a.popup {
 
   .leaflet-control-zoom.leaflet-bar.leaflet-control {
     display: none;
+  }
+
+  .letter-wrapper {
+    margin: 0px;
+  }
+
+  .letter-text {
+    padding: 15px;
   }
 }
 
