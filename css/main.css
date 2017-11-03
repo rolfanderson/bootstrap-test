@@ -7,12 +7,6 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 @import url("https://fonts.googleapis.com/css?family=Crete+Round");
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@font-face {
-    font-family: 'Waltograph Regular';
-    src: url('fonts/waltograph.regular-webfont.woff2') format('woff2'),
-         url('fonts/waltograph.regular-webfont.woff') format('woff'),
-         url('fonts/waltograph.regular-webfont.tff') format('truetype');
-}
 
 /*** Text ***/
 h1, h2, h3, header {
@@ -26,6 +20,29 @@ p {
   font-size: 18px;
   line-height: 36px;
   color: #111;
+  text-shadow: 0 1px 0 #FFF;
+}
+
+blockquote {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111;
+  background-color: #fff;
+  text-shadow: 0 1px 0 #FFF;
+  border-left: 10px solid #9b9b9b;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+.footnotes {
+  border-top: solid 1px #ccc;
+  margin-top: 50px;
+}
+
+.footnotes p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   text-shadow: 0 1px 0 #FFF;
 }
 
@@ -50,18 +67,22 @@ p {
   line-height: 32px;
 }
 
+.letterhead-right, .letterhead-left {
+  margin-bottom: 30px;
+}
+
 .letterhead-right p {
-    text-align: right;
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 15px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
 }
 
 .letterhead-left p {
-    text-align: left;
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 50px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
 }
 
 .epigraph {
@@ -76,22 +97,6 @@ p {
   line-height: 20px;
   color: #111;
   text-shadow: 0 1px 0 #FFF;
-}
-
-.did-you-know {
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
-
-}
-
-blockquote {
-  font-family: "Droid Sans", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #111;
-  text-shadow: 0 1px 0 #FFF;
-  border-left: 5px solid #D3D3D3;
 }
 
 img.picture {
@@ -130,7 +135,7 @@ a:hover, a:focus {
   text-align: center;
 }
 
-.citation {
+.citation p {
   font-family: 'Times New Roman', serif;
   padding-left: 40px ;
   text-indent: -40px ;
@@ -403,6 +408,11 @@ a.popup {
     blockquote {
       margin-left: 45px;
       padding-right: 45px;
+      margin-right: 45px;
+    }
+
+    .caption p {
+      margin-top: 0px;
     }
 }
 
