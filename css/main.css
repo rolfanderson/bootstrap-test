@@ -99,6 +99,10 @@ blockquote {
   text-shadow: 0 1px 0 #FFF;
 }
 
+#disney-letter {
+  width: 100%;
+}
+
 img.picture {
   padding-top: 15px;
   width: 50%;
