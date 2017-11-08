@@ -139,6 +139,12 @@ a:hover, a:focus {
   text-align: center;
 }
 
+.break-text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 .citation p {
   font-family: 'Times New Roman', serif;
   padding-left: 40px ;
