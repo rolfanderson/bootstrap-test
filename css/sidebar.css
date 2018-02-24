@@ -57,8 +57,17 @@
     -o-transition: all 0.3s ease-in-out;
 }*/
 
-#sidebar-backdrop {
+.sidebar-backdrop {
   cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 4;
 }
 
 #toc {

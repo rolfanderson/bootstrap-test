@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans");
 @import url("https://fonts.googleapis.com/css?family=Crete+Round");
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
 
 /*** Text ***/
 h1, h2, h3, header {
@@ -16,7 +17,7 @@ h1, h2, h3, header {
 }
 
 p {
-  font-family: 'Georgia', serif;
+  font-family: 'Merriweather', serif;
   font-size: 18px;
   line-height: 36px;
   color: #111;
@@ -92,7 +93,7 @@ blockquote {
 }
 
 .epigraph p {
-  font-family: 'Georgia', serif;
+  font-family: 'Merriweather', serif;
   font-size: 16px;
   line-height: 20px;
   color: #111;
@@ -257,24 +258,9 @@ img.logo {
   margin-bottom: 20px;*/
 }
 
-.modal-header {
-
-}
-
-.close {
-
-}
-
 .exit-btn, .exit-btn:hover, .exit-btn:active {
   color: #ffffff;
   background-color: #465c8b;
-}
-
-.modal-backdrop {
-  height: 100%;
-  width: auto;
-  opacity: 0.5;
-  z-index: 3;
 }
 
 /*** Map ***/

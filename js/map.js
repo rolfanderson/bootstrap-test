@@ -4,7 +4,7 @@ var map;
 var OpenStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   minZoom: 15,
-  attribution: 'A MEmorial by Kenny Anderson and Jason Crider',
+  attribution: 'Kenny Anderson and Jason Crider',
 });
 
 var magicKingdom = [28.4187304,-81.581206];
@@ -366,7 +366,7 @@ function clickZoom(e) {
 
 /**** Attribution and Control Buttons ****/
 
-L.easyButton({
+/*L.easyButton({
   position: 'topright',
   id:'about-button',
   leafletClasses: true,
@@ -377,7 +377,7 @@ L.easyButton({
     },
     icon: '<i class="mdi mdi-help mdi-18px"></i>'
   }]
-}).addTo(map);
+}).addTo(map);*/
 
 var magicTab = L.easyButton({
   position: 'topright',

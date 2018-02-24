@@ -7,4 +7,4 @@ $(document).ready(function() {
 
 setTimeout(function() {
   $("#snackbar").hide().empty();
-}, 9000);
+}, 10000);
