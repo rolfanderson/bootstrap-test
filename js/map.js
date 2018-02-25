@@ -54,7 +54,7 @@ L.marker([28.4184, -81.57835], {
 L.marker([28.419311, -81.58104], {
   id: "marker-2",
   icon: ripIcon
-}).addTo(map).bindPopup("<a class='popup'>Joel Goode<br>Auguest 11, 1977</a>").on('click', clickZoom);
+}).addTo(map).bindPopup("<a class='popup'>Joel Goode<br>August 11, 1977</a>").on('click', clickZoom);
 
 L.marker([28.419192, -81.577707], {
   id: "marker-3",
