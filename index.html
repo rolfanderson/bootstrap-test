@@ -77,12 +77,12 @@
                   <span class="text-nowrap"><i class="mdi mdi-snowflake mdi-18px"></i>Memento Mortimer</span></li>
                 <li class="list-group-item clickable random-section" data-toggle="modal" data-target="#punctum">
                   <span class="text-nowrap"><i class="mdi mdi-alert-circle-outline mdi-18px"></i>Punctum Notifications</span></li>
-                <li class="list-group-item clickable" data-toggle="modal" data-target="#acknowledgments">
-                  <span class="text-nowrap"><i class="mdi mdi-thumb-up mdi-18px"></i>Acknowledgments</span></li>
+                <!--<li class="list-group-item clickable" data-toggle="modal" data-target="#acknowledgments">
+                  <span class="text-nowrap"><i class="mdi mdi-thumb-up mdi-18px"></i>About</span></li>-->
                 <li class="list-group-item clickable" data-toggle="modal" data-target="#references">
                   <span class="text-nowrap"><i class="mdi mdi-format-quote-close mdi-18px"></i>References</span></li>
-                <li class="list-group-item clickable" data-toggle="modal" data-target="#techspecs">
-                  <span class="text-nowrap"><i class="mdi mdi-settings mdi-18px"></i>Technical Specifications</span></li>
+                <li class="list-group-item clickable" data-toggle="modal" data-target="#acknowledgments">
+                  <span class="text-nowrap"><i class="mdi mdi-settings mdi-18px"></i>About</span></li>
               </div>
               </table>
             </div>
@@ -196,8 +196,48 @@ context-dependent critical intervention of Walt Disney World in Orlando,
 Florida, offering new rhetorical affordances and potentials for civic discourse
 within this otherwise closed corporate space. </p>
 
+<img src='img/DDTmapphone.png' width='50%' alt='Mobile website including map'/><img src='img/mortimermockup1.png' width='50%' alt='Phone app in use'/>
 
-<img src='img/DDTmapphone.png' width='50%' alt='Mobile website including map'/><img src='img/DDTmortimerphone.png' width='50%' alt='Phone app in use'/>
+<h3>A Note on Hidden Mortimers</h3>
+
+<p>At the time of this publication, the Hidden Mortimers mobile phone
+application is not available for download. While augmented reality development
+is becoming more and more accessible to the average consumer, it is not without
+its roadblocks. There have been multiple iterations of Hidden Mortimers across
+several augmented reality platforms, each platform containing various
+affordances and limitations. We constructed the first mockup in HP Reveal
+(formerly Aurasma), an easy-to-use AR platform for mobile phones with a
+streamlined user interface. Like most free AR platforms though, HP Reveal
+operates strictly on image recognition, meaning the real-world information that
+users interface with (called “triggers”) to access the app’s content
+(“overlays”) is limited to easily recognizable images. While Walt Disney World
+obviously contains a near limitless amount of visual information to augment,
+this would require users to go through the unintuitive process of locating and
+scanning signs or images corresponding to each death in order to access the
+memorials, and thus did not quite fulfill our requirements. We experimented
+similarly with the audio-based AR applications Geotourist and Detour. While
+these applications allowed for information to be triggered based on GPS
+coordinates, they lacked the ability to include and arrange visual information
+in the ways we needed.</p>
+
+<p>As such, we sought a hybrid of the two ways these AR applications arranged
+their information, an application that would trigger based on location, but
+arrange information visually. Because none of the currently available AR
+applications allow for this, we created a standalone application in the game
+development platform Unity, building off of Jacob Greene’s tutorial for
+humanities AR development,
+“<a href='https://programminghistorian.org/en/lessons/retired/intro-to-augmented-reality-with-unity' target='_blank'>Introduction to Mobile Augmented Reality Development in Unity</a>.”
+This let us mark physical locations with Mortimer tombstone markers, demarcating these spaces to be
+explored in alternative ways.</p>
+
+<p>In addition, this allowed for what we term “punctum notifications,” where the
+push notifications of a smartphone can update visitors with the sting of death
+as they make their way through the parks. When users of the app come within
+close proximity to the location of a death, a push notification alerts them to
+the memorial tagged to that location, punctuating their embodiment of the parks
+with a visceral reminder of a different way this space was once inhabited.</p>
+
+<img class="img-responsive center-block picture" src='img/mortimermockup2.jpg' alt='Mobile website including map'/>
 
 <div class="footnotes">
   <p><sup>1</sup> See “Punctum Notifications” section.</p>
@@ -1427,9 +1467,12 @@ but also to the local communities that allow the park to exist.</p>
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h1 class="modal-title break-text">Acknowledgments</h1>
+            <h1 class="modal-title break-text">About</h1>
           </div>
 <article class="modal-body">
+
+<h3>Acknowledgments</h3>
+
 <p>Special thanks to the following individuals for their support and invaluable
 insights on this project:</p>
 
@@ -1439,11 +1482,27 @@ the groundwork for the project.</p>
 <p>Sid Dobrin, Barry Mauer, Shannon Butts, Emily F. Brooks, and Caleb Andrew Milligan, for early
 inspiration and feedback.</p>
 
+<p>The reviewers and editors at <em>Kairos</em>, for their helpful feedback and encouragement.</p>
+
 <p>Byron Hanson, who helped with web development and layout.</p>
 
 <p>Susan Anderson, for spreading the rumor.</p>
 
 <p>Cynthia Barnett, for reminding us of the importance of good journalism.</p>
+
+<h3>Technical Specifications</h3>
+
+<p>As scholars of digital rhetoric and multimedia, we take seriously the
+affordances allowed through open source and copyleft tools and software. We are
+thankful for the following open source tools that made this project possible:</p>
+<p>Bootstrap v3.3.7</p>
+<p>Leaflet 1.0.3</p>
+<p>GIMP 2.8.20</p>
+<p>Unity (Personal) 2017.2</p>
+<p>Nikon D5000</p>
+
+<h3>Author Bios</h3>
+
 </article>
           <div class="modal-footer">
             <button type="button" class="btn btn-default exit-btn" data-dismiss="modal">Close</button>
@@ -1502,6 +1561,8 @@ inspiration and feedback.</p>
   <p>Greene, Madison Jones and Jacob. (2017). Augmented vélorutionaries: Digital rhetoric, memorials, and public discourse. <i>Kairos: A Journal of Rhetoric, Technology, and Pedagogy 22</i>(1). Retrieved from<a href="http://kairos.technorhetoric.net/22.1/topoi/jones-greene/index/html"> http://kairos.technorhetoric.net/22.1/topoi/jones-greene/index/html</a></p>
 
   <p>Greene, Jacob. (2017). From augmentation to articulation: (Hyper)linking the locations of public writing. <i>enculturation: a journal of rhetoric, writing, and culture</i> <i>24</i>. Retrieved from<a href="http://enculturation.net/from_augmentation_to_articulation"> http://enculturation.net/from_augmentation_to_articulation</a></p>
+
+  <p>Greene, Jacob W. (2016) "Introduction to mobile augmented reality development in unity," <em>The programming historian</em>, 5. Retrieved from <a href='https://programminghistorian.org/en/lessons/retired/intro-to-augmented-reality-with-unity'>https://programminghistorian.org/en/lessons/retired/intro-to-augmented-reality-with-unity</a>.</p>
 
   <p>Gries, Laurie. (2013). Iconographic tracking: A digital research method for visual rhetoric and circulation studies. <em>Computers and Composition</em> 30.</p>
 
