@@ -393,6 +393,16 @@ p.headline {
   border-bottom: none;
 }
 
+.row.row-no-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.col-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /*** Media Queries ***/
 @media (max-width: 480px){
   .logo-text-1 {
